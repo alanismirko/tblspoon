@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  margin: 3rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  border-bottom: 1px solid #ccc;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #4F4F4F;
+}
+
+.section-sub-header {
+  color: #CAD7DD;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.section-split {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3rem;
+}
+
+header {
+  background-color: #FD8D27;
+  color: white;
+  padding: 0.5rem 3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.colors {
+  display: flex;
+  column-gap: 6vw;
+  flex-wrap: wrap;
+}
+.colors p {
+  color: grey;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.color {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+.color-primary {
+  background-color: #FD8D27;
+}
+.color-secondary {
+  background-color: #CAD7DD;
+}
+.color-secondary-light {
+  background-color: #E7EDF0;
+}
+.color-text {
+  background-color: #1C1C1C;
+}
+.color-grey-dark {
+  background-color: #4F4F4F;
+}
+.color-grey-light {
+  background-color: #C6C6C6;
+}
+
+.moods img {
+  width: auto;
+  height: 18rem;
+  display: inline-block;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  color: #1C1C1C;
+}
+
+h1 {
+  font-family: "Akshar", sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Akshar", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-family: "Akshar", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+h4 {
+  font-family: "Akshar", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  line-height: 1.4;
+}
+
+button {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.18s ease-out;
+}
+button.button-primary {
+  background-color: #1C1C1C;
+  color: white;
+  border: none;
+}
+button.button-primary:hover {
+  background-color: #2b2b2b;
+}
+button.button-secondary {
+  background-color: white;
+  color: #1C1C1C;
+  border: 1px solid #CAD7DD;
+}
+button.button-secondary:hover {
+  background-color: #CAD7DD;
+  color: white;
+}
+
+.graphic-container {
+  display: inline-block;
+}
+.graphic-container:nth-of-type(2) {
+  margin-left: 1rem;
+}
+.graphic-container img {
+  width: 12vw;
+  height: auto;
+}
+
+#signup {
+  display: none;
+}
+
+/*# sourceMappingURL=login.css.map */

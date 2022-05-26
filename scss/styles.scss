@@ -1,0 +1,191 @@
+@import "var";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    margin: $spacing-xxl;
+}
+
+// STYLE GUIDE STYLES
+section {
+    margin-bottom: $spacing-xl
+}
+
+.section-header {
+    border-bottom: 1px solid #ccc;
+    margin: $spacing-md 0;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: $color-grey-dark
+}
+
+.section-sub-header {
+    color: $color-secondary;
+    font-weight:bold;
+    font-size: .9rem;
+}
+
+.section-split {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 3rem;
+}
+
+
+header {
+    background-color: $color-primary;
+    color: white;
+    padding: $spacing-sm $spacing-xxl;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+// COLORS
+.colors {
+    display: flex;
+    column-gap: 6vw;
+    flex-wrap: wrap;
+
+    p {
+        color: grey;
+        text-align: center;
+        font-size: .7rem;
+    }
+}
+
+.color {
+    width: 6rem;
+    height: 6rem;
+    border-radius: $round-full;
+
+    &-primary {
+        background-color: $color-primary;
+    }
+    &-secondary {
+        background-color: $color-secondary;
+    }
+    &-secondary-light {
+        background-color: $color-secondary-light;
+    }
+    &-text {
+        background-color: $color-text;
+    }
+    &-grey-dark {
+        background-color: $color-grey-dark
+    }
+    &-grey-light {
+        background-color: $color-grey-light;
+    }
+}
+
+// MOODS
+.moods {
+
+    img {
+        width:auto;
+        height: 18rem;
+        display:inline-block
+    }
+}
+
+
+// TYPOGRAPHY
+html, body {
+    font-family: $font-main;
+    color: $color-text
+}
+
+h1 {
+    font-family: $font-headers;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: $font-headers;
+    text-transform: uppercase;
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-family: $font-headers;
+    text-transform: uppercase;
+    margin-bottom:1.2rem;
+}
+
+h4 {
+    font-family: $font-headers;
+    text-transform: uppercase;
+    margin-bottom:1.2rem;
+}
+
+h5 {
+    font-family: $font-main;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom:1.2rem;
+}
+
+p {
+    line-height: 1.4;
+}
+
+
+// BUTTONS
+button {
+    display: inline-block;
+    padding: $spacing-sm $spacing-xl;
+    text-transform: uppercase;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: .18s ease-out;
+
+    &.button-primary {
+        background-color: $color-text;
+        color: white;
+        border: none;
+
+        &:hover {
+            background-color: $color-text-hover;
+        }
+    }
+
+    &.button-secondary {
+        background-color: white;
+        color: $color-text;
+        border: 1px solid $color-secondary;
+
+        &:hover {
+            background-color: $color-secondary;
+            color: white;
+        }
+    }
+
+}
+
+
+// GRAPHICS
+.graphic-container {
+    display:inline-block;
+
+    &:nth-of-type(2) {
+        margin-left: 1rem
+    }
+
+    img {
+        width: 12vw;
+        height:auto
+    }
+}

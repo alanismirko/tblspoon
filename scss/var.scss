@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$color-primary: #FD8D27;
+$color-secondary: #CAD7DD;
+$color-secondary-light: #E7EDF0;
+$color-text: #1C1C1C;
+$color-text-hover: #2b2b2b;
+$color-grey-dark: #4F4F4F;
+$color-grey-light: #C6C6C6;
+
+$spacing-xs: .2rem;
+$spacing-sm: .5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 3rem;
+
+$font-headers: 'Akshar', sans-serif;
+$font-main: 'Montserrat', sans-serif;
+
+$width-full: 100%;
+$width-half: 50%;
+$width-xs: 20%;
+$width-sm: 45%;
+$width-md: 70%;
+$width-lg: 80%;
+
+$round-full: 50%;
+$round-md: 20px;
+$round-xs: 2px;
+
+$breakPoints: (
+    sm: 320px,
+    md: 480px,
+    lg: 768px,
+    xl: 1032px,
+    xxl: 1370px
+);
