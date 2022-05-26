@@ -1,4 +1,5 @@
 @import "var";
+@import "nav";
 
 
 * {
@@ -15,91 +16,20 @@ main {
     margin: $spacing-xxl;
 }
 
-// STYLE GUIDE STYLES
-section {
-    margin-bottom: $spacing-xl
-}
-
-.section-header {
-    border-bottom: 1px solid #ccc;
-    margin: $spacing-md 0;
-    font-size: .8rem;
-    text-transform: uppercase;
-    color: $color-grey-dark
-}
-
-.section-sub-header {
-    color: $color-secondary;
-    font-weight:bold;
-    font-size: .9rem;
-}
-
-.section-split {
-    display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    gap: 3rem;
-}
-
-
-header {
-    background-color: $color-primary;
-    color: white;
-    padding: $spacing-sm $spacing-xxl;
-}
-
-
 * {
     box-sizing: border-box;
 }
 
-// COLORS
-.colors {
-    display: flex;
-    column-gap: 6vw;
-    flex-wrap: wrap;
-
-    p {
-        color: grey;
-        text-align: center;
-        font-size: .7rem;
-    }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.color {
-    width: 6rem;
-    height: 6rem;
-    border-radius: $round-full;
-
-    &-primary {
-        background-color: $color-primary;
-    }
-    &-secondary {
-        background-color: $color-secondary;
-    }
-    &-secondary-light {
-        background-color: $color-secondary-light;
-    }
-    &-text {
-        background-color: $color-text;
-    }
-    &-grey-dark {
-        background-color: $color-grey-dark
-    }
-    &-grey-light {
-        background-color: $color-grey-light;
-    }
+hr {
+    margin: $spacing-md 0;
+    opacity: 0.4;
 }
-
-// MOODS
-.moods {
-
-    img {
-        width:auto;
-        height: 18rem;
-        display:inline-block
-    }
-}
-
 
 // TYPOGRAPHY
 html, body {
@@ -107,35 +37,48 @@ html, body {
     color: $color-text
 }
 
+//page-header
 h1 {
     font-family: $font-headers;
     text-transform: uppercase;
     font-size: 4rem;
 }
 
+//section-header
 h2 {
     font-family: $font-headers;
     text-transform: uppercase;
     font-size: 3.8rem;
 }
 
+//paragraph-header
 h3 {
     font-family: $font-headers;
     text-transform: uppercase;
     margin-bottom:1.2rem;
 }
 
+//grid-homepageitem header
 h4 {
     font-family: $font-headers;
     text-transform: uppercase;
     margin-bottom:1.2rem;
 }
 
+//card header
 h5 {
     font-family: $font-main;
     font-weight: 500;
     font-size: 1.2rem;
     margin-bottom:1.2rem;
+}
+
+.caption {
+    font-size: .8rem;
+    font-family: $font-main;
+    color: $color-secondary;
+    font-weight: 600;
+
 }
 
 p {
@@ -177,15 +120,7 @@ button {
 
 
 // GRAPHICS
-.graphic-container {
-    display:inline-block;
-
-    &:nth-of-type(2) {
-        margin-left: 1rem
-    }
-
-    img {
-        width: 12vw;
-        height:auto
-    }
+.icon {
+    width: 30px;
+    height: 30px;
 }
