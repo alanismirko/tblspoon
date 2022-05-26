@@ -12,8 +12,7 @@ header {
 }
 
 .menu-front {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -28,7 +27,6 @@ header {
   height: 40px;
   cursor: pointer;
   z-index: 2;
-  -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
@@ -42,7 +40,6 @@ header {
   width: 35px;
   height: 6px;
   background-color: white;
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   opacity: 1;
 }
@@ -91,16 +88,12 @@ ul {
   display: grid;
   -ms-grid-rows: 1fr auto;
       grid-template-rows: 1fr auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
   background-color: #4F4F4F;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
-  -webkit-transition: all 0.5s ease-in-out;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-in-out;
 }
 
@@ -115,7 +108,6 @@ nav a {
   font-family: monospace;
   font-size: 1.5rem;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -126,8 +118,7 @@ nav a:hover {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -165,18 +156,17 @@ section {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-column-gap: 6vw;
+          -moz-column-gap: 6vw;
           column-gap: 6vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .colors p {
@@ -267,7 +257,6 @@ button {
   text-transform: uppercase;
   font-size: .8rem;
   cursor: pointer;
-  -webkit-transition: .18s ease-out;
   transition: .18s ease-out;
 }
 
