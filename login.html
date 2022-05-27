@@ -8,23 +8,83 @@
 
     <link rel="stylesheet" href="./css/login.css">
     <script src="scripts/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/7775ec9239.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <main>
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'login')">Login</button>
-            <button class="tablinks" onclick="openTab(event, 'signup')">Signup</button>
+            <button class="tablinks button-secondary" onclick="openTab(event, 'login')">Login</button>
+            <button class="tablinks button-secondary" onclick="openTab(event, 'signup')">Signup</button>
           </div>
           
           <div id="login" class="tabcontent">
-            <h2>Login</h2>
-            <p>Login</p>
+
+            <img src="images/logo/logo-login.svg">
+
+            <h3>Login with:</h3>
+
+            <div class="login-social">
+                <a href="https://www.facebook.com/login" target="_blank">
+                <button class="button-secondary">
+                        <i class="fa fa-facebook fa-fw"></i> FACEBOOK
+                </button>
+                 </a>
+
+                 <a href="https://accounts.google.com/AccountChooser/signinchooser?flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank">
+                <button class="button-secondary">
+                        <i class="fa fa-google fa-fw"></i> GOOGLE
+                </button>
+                </a>
+    
+            </div>
+
+            <h3>or</h3>
+
+            <div class="input-login">
+                <input name="loginEmail" type="email" placeholder="Email address" required>
+                <input name="loginPassword" type="password" placeholder="Password" required>
+                <a href="index.html">
+                <button class="button-primary">
+                    Login
+                </button>
+                 </a>
+            </div>
+
           </div>
           
           <div id="signup" class="tabcontent">
-            <h2>Signup</h2>
-            <p>Signup</p> 
+            <img src="images/logo/logo-login.svg">
+
+            <h3>Signup with:</h3>
+
+            <div class="login-social">
+
+                <a href="https://www.facebook.com/login" target="_blank">
+                <button class="button-secondary">
+                        <i class="fa fa-facebook fa-fw"></i> FACEBOOK
+                </button>
+                </a>
+
+                <a href="https://accounts.google.com/AccountChooser/signinchooser?flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank">
+                <button class="button-secondary" >
+                        <i class="fa fa-google fa-fw"></i> GOOGLE
+                </button>
+                </a>
+
+    
+            </div>
+
+            <h3>or</h3>
+
+            <div class="input-login">
+                <input name="userName" type="text" placeholder="Name">
+                <input name="loginEmail" type="email" placeholder="Email address" required>
+                <input name="loginPassword" type="password" placeholder="Password" required>
+                <button class="button-primary">
+                    Signup
+                </button>
+            </div>
           </div>
     </main>
     
