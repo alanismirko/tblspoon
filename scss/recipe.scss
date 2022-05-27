@@ -1,0 +1,179 @@
+@import "styles";
+
+.recipe-name-desktop{
+    display: none;
+}
+
+
+.recipe-heading{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: $width-full;
+    }
+    h2{
+        text-align: center;
+    }
+    .add-to-collection{
+        padding-top: $spacing-sm;
+        cursor: pointer;
+    }
+}
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    h3{
+        padding-top: $spacing-md;
+    }
+}
+
+.time-level{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: $spacing-xl;
+    h4{
+        margin: 0rem;
+        color: $color-primary;
+    }
+    .time, .level{
+        background-color: $color-secondary;
+        width: 45%;
+        text-align: center;
+        padding: $spacing-sm;
+        
+    }
+}
+
+.ads{
+    margin-top: $spacing-md;
+    img{
+        width: 100%;
+    }
+}
+
+.instructions{
+    h3{
+        margin-top: $spacing-xl;
+    }
+    .instruction-text{
+        ul{
+            li{
+                display: flex;
+                flex-direction: row;
+                text-align: justify;
+                padding-bottom: $spacing-md;
+            }
+            p{
+                font-weight: 700;
+                padding-right: $spacing-md;
+            }
+        }
+
+    }
+}
+
+.comment{
+    textarea{
+        resize: none;
+        width: 100%;
+        height: 5rem;
+        padding: $spacing-sm;
+    }
+    button{
+        margin: auto;
+        display: block;
+    }
+    .comment-user{
+        display: flex;
+        flex-direction: row;
+        margin-top: $spacing-md;
+        img{
+            width: 5rem;
+            height: 5rem;
+            border-radius: $round-full;
+        }
+        .comment-text{
+            padding-left: $spacing-md;
+            h4{
+                margin: 0rem;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    .recipe-name-desktop{
+        display: block;
+    }
+    .recipe-detail{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .recipe-name-mobile{
+            display:none;
+        }
+        h2{
+            text-align: left;
+        }
+        img{
+            width: 80%;
+        }
+        .recipe-heading{
+            h2{
+                font-size: 2.8em;
+            }
+        }
+        .ingredients{
+            width: 100%;
+        }
+    .time-level{
+       flex-direction: column;
+       width: 10rem;
+       .time, .level{
+           width: 5rem;
+       }
+       .time{
+           margin-bottom: 2rem;
+       }
+    }
+    }
+    .ingredients{
+        display: flex;
+        flex-direction: row;
+        ul{
+            list-style-type: circle;
+            padding: 0rem $spacing-lg 0rem $spacing-sm;
+        }
+    }
+    .ads{
+        img{
+            width: 60%;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    .ingredients{
+        margin-right: 5rem;
+    }
+    .ads{
+        img{
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+    }
+    .comment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        textarea{
+            width: 50rem;
+        }
+    }
+}
