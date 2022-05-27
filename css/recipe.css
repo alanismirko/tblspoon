@@ -575,6 +575,15 @@ button.button-secondary:hover {
     display: block;
     margin: auto;
   }
+
+  .comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .comment textarea {
+    width: 50rem;
+  }
 }
 
 /*# sourceMappingURL=recipe.css.map */
