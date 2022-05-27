@@ -1,5 +1,6 @@
 @import "var";
 @import "nav";
+@import "footer";
 
 
 * {
@@ -83,6 +84,10 @@ h5 {
 
 p {
     line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
 }
 
 
