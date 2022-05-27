@@ -464,6 +464,13 @@ button.button-secondary:hover {
 .all-recipes .recipe-card .card-text-wrapper .card-text p {
   padding: 0.2rem 0em 0em 0.5rem;
 }
+.all-recipes .recipe-card .card-text-wrapper .card-collection {
+  display: flex;
+  flex-direction: row;
+}
+.all-recipes .recipe-card .card-text-wrapper .card-collection p {
+  padding: 0.2rem;
+}
 
 .ads img {
   width: 100%;

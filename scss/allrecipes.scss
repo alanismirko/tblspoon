@@ -44,6 +44,13 @@
                 }
 
             }
+            .card-collection{
+                display: flex;
+                flex-direction: row;
+                p{
+                    padding: $spacing-xs
+                }
+            }
         }
     }
 }
