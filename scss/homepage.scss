@@ -26,7 +26,7 @@
     }
 }
 
-.button-wrapper{
+.button-wrapper, .button-wrapper-bottom{
     margin-bottom: $spacing-sm;
     button{
         display: block;
@@ -61,7 +61,6 @@
                 img{
                     width: 100%;
                 }
-    
             }
             .card-text-wrapper{
                 display: flex;
@@ -92,6 +91,103 @@
 .influencer-favourite{
     img{
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+
+    .button-wrapper{
+        display: none;
+    }
+
+    .img-wrapper{
+        img{
+            width: 70%;
+        }
+    }
+
+    .button-wrapper-bottom{
+        margin-top: $spacing-sm;
+        button{
+            width: 50%;
+        }
+    }
+    .just-landed-recipes{
+        .all-recipes{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: $spacing-md;
+            .recipe-card{
+                flex: 45%;
+                h2{
+                    font-size: 2em;
+                }
+            }
+
+        }
+    }
+    .ads{
+        img{
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .influencer-favourite{
+        img{
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    .top-recipes-wrapper{
+        .top-recipe{
+            .img-wrapper{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                img{
+                    &:first-child, &:nth-child(2), &:nth-child(3){
+                        flex: 0%;
+                        width: 30%;
+                    }
+                }
+                }
+            }
+    }
+
+    .just-landed-recipes{
+    .all-recipes{
+        flex-direction: row;
+        gap: $spacing-md;
+        .recipe-card{
+            flex: 20%;
+            h2{
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+    .ads{
+        img{
+            width: 50%;
+        }
+    }
+
+    .influencer-favourite{
+        img{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 

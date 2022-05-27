@@ -440,10 +440,10 @@ button.button-secondary:hover {
   width: 50%;
 }
 
-.button-wrapper {
+.button-wrapper, .button-wrapper-bottom {
   margin-bottom: 0.5rem;
 }
-.button-wrapper button {
+.button-wrapper button, .button-wrapper-bottom button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -500,6 +500,82 @@ button.button-secondary:hover {
 
 .influencer-favourite img {
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .button-wrapper {
+    display: none;
+  }
+
+  .img-wrapper img {
+    width: 70%;
+  }
+
+  .button-wrapper-bottom {
+    margin-top: 0.5rem;
+  }
+  .button-wrapper-bottom button {
+    width: 50%;
+  }
+
+  .just-landed-recipes .all-recipes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .just-landed-recipes .all-recipes .recipe-card {
+    flex: 45%;
+  }
+  .just-landed-recipes .all-recipes .recipe-card h2 {
+    font-size: 2em;
+  }
+
+  .ads img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .influencer-favourite img {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1032px) {
+  .top-recipes-wrapper .top-recipe .img-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .top-recipes-wrapper .top-recipe .img-wrapper img:first-child, .top-recipes-wrapper .top-recipe .img-wrapper img:nth-child(2), .top-recipes-wrapper .top-recipe .img-wrapper img:nth-child(3) {
+    flex: 0%;
+    width: 30%;
+  }
+
+  .just-landed-recipes .all-recipes {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .just-landed-recipes .all-recipes .recipe-card {
+    flex: 20%;
+  }
+  .just-landed-recipes .all-recipes .recipe-card h2 {
+    font-size: 2em;
+  }
+
+  .ads img {
+    width: 50%;
+  }
+
+  .influencer-favourite img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
