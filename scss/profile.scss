@@ -1,0 +1,126 @@
+@import "var";
+
+.container {
+    margin: $spacing-xxl auto;
+    max-width: 1024px; 
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .profile-image {
+        width: 50vw;
+        max-width: 350px;
+        height: auto;
+        border-radius: $round-full;
+        padding: $spacing-md;
+    }
+
+    h2, p {
+        margin: 0;
+        padding: $spacing-md;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    button {
+        margin-left: $spacing-md;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(60, 60, 60, 0.75);
+
+    form {
+        width: 80%;
+        max-width: 450px;
+        padding: $spacing-xxl;
+        margin: $spacing-xxl auto;
+        background-color: white;
+        align-items: center;
+
+        h3 {
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            padding: $spacing-sm;
+
+            label {
+                font-size: smaller;
+                padding-bottom: $spacing-xs;
+                color: $color-grey-dark;
+            }
+
+            input {
+                border: 1px solid $color-secondary;
+                border-radius: 2px;
+                margin: 0;
+                padding: $spacing-md;
+            }
+
+            textarea {
+                border: 1px solid $color-secondary;
+                border-radius: 2px;
+                padding-top: $spacing-sm;
+                padding-bottom: 5rem;
+            }
+        }
+
+        button {
+            margin-left: $spacing-sm;
+
+        }
+        
+    }
+}
+
+#my-recipes {
+    article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: $spacing-xl;
+        align-items: center;
+        justify-content: center;
+        padding: $spacing-md;
+    }
+}
+
+#ad {
+    margin: 0 auto;
+    padding: 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    #hero {
+        flex-direction: row;
+        text-align: left;
+    }
+}

@@ -21,3 +21,11 @@ function openTab(evt, action) {
     document.getElementById(action).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+function openModal () {
+  document.querySelector(".modal").classList.add("show");
+}
+
+function closeModal () {
+  document.querySelector(".modal").classList.remove("show");
+}
