@@ -422,6 +422,10 @@ button.button-secondary:hover {
   height: 30px;
 }
 
+.recipe-name-desktop {
+  display: none;
+}
+
 .recipe-heading {
   display: flex;
   flex-direction: column;
@@ -508,6 +512,69 @@ button.button-secondary:hover {
 }
 .comment .comment-user .comment-text h4 {
   margin: 0rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .recipe-name-desktop {
+    display: block;
+  }
+
+  .recipe-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .recipe-detail .recipe-name-mobile {
+    display: none;
+  }
+  .recipe-detail h2 {
+    text-align: left;
+  }
+  .recipe-detail img {
+    width: 80%;
+  }
+  .recipe-detail .recipe-heading h2 {
+    font-size: 2.8em;
+  }
+  .recipe-detail .ingredients {
+    width: 100%;
+  }
+  .recipe-detail .time-level {
+    flex-direction: column;
+    width: 10rem;
+  }
+  .recipe-detail .time-level .time, .recipe-detail .time-level .level {
+    width: 5rem;
+  }
+  .recipe-detail .time-level .time {
+    margin-bottom: 2rem;
+  }
+
+  .ingredients {
+    display: flex;
+    flex-direction: row;
+  }
+  .ingredients ul {
+    list-style-type: circle;
+    padding: 0rem 1.5rem 0rem 0.5rem;
+  }
+
+  .ads img {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1032px) {
+  .ingredients {
+    margin-right: 5rem;
+  }
+
+  .ads img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=recipe.css.map */
