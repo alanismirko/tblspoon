@@ -6,11 +6,11 @@
 
 .all-recipes{
     margin-top: $spacing-xxl;
+    display: flex;
+    flex-direction: column;
     .recipe-card{
         background-color: $color-grey-light;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: $spacing-sm;
+        padding: $spacing-sm;
         margin-bottom: $spacing-xl;
         a{
             text-decoration: none;
@@ -26,8 +26,7 @@
 
         .img-wrapper{
             img{
-                width: 279px;
-                height: 186px;
+                width: 100%;
             }
 
         }
@@ -45,6 +44,23 @@
                 }
 
             }
+        }
+    }
+}
+
+.ads{
+    img{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    .all-recipes{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: $spacing-md;
+        .recipe-card{
+            flex: 45%;
         }
     }
 }
