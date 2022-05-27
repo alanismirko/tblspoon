@@ -1,5 +1,81 @@
 @import "styles";
 
+body{
+    background-color: $color-secondary;
+}
+
+main{
+    transform: translate(0%, 30%);
+}
+
 #signup{
     display: none;
 }
+
+.tab{
+    display: flex;
+    button{
+        width: $width-half;
+    }
+}
+
+.tabcontent{
+    h3{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+img {
+    width:$width-xs;
+    margin: 1rem auto auto ;
+    display: block;
+}
+
+.login-social{
+    display: flex;
+    justify-content: center;
+    button{
+        width: $width-full;
+    }
+}
+
+.input-login{
+    display: flex;
+    flex-direction: column;
+    input{
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-radius: $round-xs;
+    }
+    button{
+        width: $width-full;
+    }
+}
+
+@media(min-width:768px) {
+    body{
+        background-color: white;
+    }
+    main{
+        background-color: $color-secondary;
+        width: 600px;
+        padding: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-56%, -61%);
+        box-shadow: 15px 30px 35px $color-primary;
+        -webkit-perspective: 300px;
+        perspective: 300px;
+    }
+    .input-login, .login-social{
+        width: calc($width-full - $width-sm);
+        margin: 1rem auto auto ;
+    }
+}
+
+
+
+
+
