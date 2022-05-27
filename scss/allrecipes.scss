@@ -61,6 +61,38 @@
         gap: $spacing-md;
         .recipe-card{
             flex: 45%;
+            h2{
+                font-size: 2em;
+            }
+        }
+    }
+
+    .ads{
+        img{
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    .all-recipes{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: $spacing-md;
+        .recipe-card{
+            flex: 20%;
+            h2{
+                font-size: 2em;
+            }
+        }
+    }
+
+    .ads{
+        img{
+            width: 50%;
         }
     }
 }
