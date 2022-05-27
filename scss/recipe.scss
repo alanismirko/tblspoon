@@ -18,6 +18,17 @@
         padding-top: $spacing-sm;
         cursor: pointer;
     }
+    .collection{
+        display: flex;
+        flex-direction: row;
+        padding-top: $spacing-sm;
+        p{
+            padding: $spacing-xs
+        }
+        img{
+            width: 10%;
+        }
+    }
 }
 
 .ingredients{
@@ -95,7 +106,8 @@
             border-radius: $round-full;
         }
         .comment-text{
-            padding-left: $spacing-md;
+            padding: $spacing-sm 0rem 0rem $spacing-md;
+            
             h4{
                 margin: 0rem;
             }
