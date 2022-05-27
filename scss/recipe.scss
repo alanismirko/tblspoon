@@ -1,0 +1,51 @@
+@import "styles";
+
+
+
+.recipe-heading{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: $width-full;
+    }
+    h2{
+        text-align: center;
+    }
+    .add-to-collection{
+        padding-top: $spacing-sm;
+    }
+}
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    h3{
+        padding-top: $spacing-md;
+    }
+}
+
+.time-level{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: $spacing-xl;
+    h4{
+        margin: 0rem;
+        color: $color-primary;
+    }
+    .time, .level{
+        background-color: $color-secondary;
+        width: 45%;
+        text-align: center;
+        padding: $spacing-sm;
+        
+    }
+}
+
+.ads{
+    margin-top: $spacing-md;
+    img{
+        width: 100%;
+    }
+}
+
