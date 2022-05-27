@@ -1,0 +1,50 @@
+@import "styles";
+
+.tabcontent{
+    display: none;
+}
+
+.all-recipes{
+    margin-top: $spacing-xxl;
+    .recipe-card{
+        background-color: $color-grey-light;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: $spacing-sm;
+        margin-bottom: $spacing-xl;
+        a{
+            text-decoration: none;
+        }
+        h2{
+            color: $color-primary;
+            text-align: center;
+        }
+        p{
+            color: $color-text;
+            font-weight: 700;
+        }
+
+        .img-wrapper{
+            img{
+                width: 279px;
+                height: 186px;
+            }
+
+        }
+        .card-text-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .card-text{
+                text-align: center;
+                img{
+                    width: 10%;
+                }
+                p{
+                    padding: $spacing-xs 0em 0em $spacing-sm;
+                }
+
+            }
+        }
+    }
+}
