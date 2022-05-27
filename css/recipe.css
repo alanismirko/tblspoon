@@ -440,6 +440,17 @@ button.button-secondary:hover {
   padding-top: 0.5rem;
   cursor: pointer;
 }
+.recipe-heading .collection {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+}
+.recipe-heading .collection p {
+  padding: 0.2rem;
+}
+.recipe-heading .collection img {
+  width: 10%;
+}
 
 .ingredients {
   display: flex;
@@ -508,7 +519,7 @@ button.button-secondary:hover {
   border-radius: 50%;
 }
 .comment .comment-user .comment-text {
-  padding-left: 1rem;
+  padding: 0.5rem 0rem 0rem 1rem;
 }
 .comment .comment-user .comment-text h4 {
   margin: 0rem;
