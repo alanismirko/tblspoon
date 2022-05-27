@@ -1,0 +1,97 @@
+@import "styles";
+
+.ads{
+    img{
+        width: 100%;
+    }
+}
+
+.top-recipes-wrapper{
+    .top-recipe{
+        .img-wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            img{
+                &:first-child{
+                    flex: 100%;
+                    width: 100%;
+                }
+                &:nth-child(2), &:nth-child(3){
+                    flex: 50%;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.button-wrapper{
+    margin-bottom: $spacing-sm;
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+.just-landed-recipes{
+    margin-top: $spacing-xxl;
+    .all-recipes{
+        display: flex;
+        flex-direction: column;
+        .recipe-card{
+            background-color: $color-grey-light;
+            padding: $spacing-sm;
+            margin-bottom: $spacing-xl;
+            a{
+                text-decoration: none;
+            }
+            h2{
+                color: $color-primary;
+                text-align: center;
+            }
+            p{
+                color: $color-text;
+                font-weight: 700;
+            }
+    
+            .img-wrapper{
+                img{
+                    width: 100%;
+                }
+    
+            }
+            .card-text-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .card-text{
+                    text-align: center;
+                    img{
+                        width: 10%;
+                    }
+                    p{
+                        padding: $spacing-xs 0em 0em $spacing-sm;
+                    }
+    
+                }
+                .card-collection{
+                    display: flex;
+                    flex-direction: row;
+                    p{
+                        padding: $spacing-xs
+                    }
+                }
+            }
+        }
+    }
+}
+
+.influencer-favourite{
+    img{
+        width: 100%;
+    }
+}
+
