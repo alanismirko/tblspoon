@@ -1,0 +1,193 @@
+@import "styles";
+
+.ads{
+    img{
+        width: 100%;
+    }
+}
+
+.top-recipes-wrapper{
+    .top-recipe{
+        .img-wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            img{
+                &:first-child{
+                    flex: 100%;
+                    width: 100%;
+                }
+                &:nth-child(2), &:nth-child(3){
+                    flex: 50%;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.button-wrapper, .button-wrapper-bottom{
+    margin-bottom: $spacing-sm;
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+.just-landed-recipes{
+    margin-top: $spacing-xxl;
+    .all-recipes{
+        display: flex;
+        flex-direction: column;
+        .recipe-card{
+            background-color: $color-grey-light;
+            padding: $spacing-sm;
+            margin-bottom: $spacing-xl;
+            a{
+                text-decoration: none;
+            }
+            h2{
+                color: $color-primary;
+                text-align: center;
+            }
+            p{
+                color: $color-text;
+                font-weight: 700;
+            }
+    
+            .img-wrapper{
+                img{
+                    width: 100%;
+                }
+            }
+            .card-text-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .card-text{
+                    text-align: center;
+                    img{
+                        width: 10%;
+                    }
+                    p{
+                        padding: $spacing-xs 0em 0em $spacing-sm;
+                    }
+    
+                }
+                .card-collection{
+                    display: flex;
+                    flex-direction: row;
+                    p{
+                        padding: $spacing-xs
+                    }
+                }
+            }
+        }
+    }
+}
+
+.influencer-favourite{
+    img{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+
+    .button-wrapper{
+        display: none;
+    }
+
+    .img-wrapper{
+        img{
+            width: 70%;
+        }
+    }
+
+    .button-wrapper-bottom{
+        margin-top: $spacing-sm;
+        button{
+            width: 50%;
+        }
+    }
+    .just-landed-recipes{
+        .all-recipes{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: $spacing-md;
+            .recipe-card{
+                flex: 45%;
+                h2{
+                    font-size: 2em;
+                }
+            }
+
+        }
+    }
+    .ads{
+        img{
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .influencer-favourite{
+        img{
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    .top-recipes-wrapper{
+        .top-recipe{
+            .img-wrapper{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                img{
+                    &:first-child, &:nth-child(2), &:nth-child(3){
+                        flex: 0%;
+                        width: 30%;
+                    }
+                }
+                }
+            }
+    }
+
+    .just-landed-recipes{
+    .all-recipes{
+        flex-direction: row;
+        gap: $spacing-md;
+        .recipe-card{
+            flex: 20%;
+            h2{
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+    .ads{
+        img{
+            width: 50%;
+        }
+    }
+
+    .influencer-favourite{
+        img{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
