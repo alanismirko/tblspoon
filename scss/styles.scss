@@ -42,14 +42,14 @@ html, body {
 h1 {
     font-family: $font-headers;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 //section-header
 h2 {
     font-family: $font-headers;
     text-transform: uppercase;
-    font-size: 3.8rem;
+    font-size: 2rem;
 }
 
 //paragraph-header
@@ -88,6 +88,15 @@ p {
 
 a {
     text-decoration: none;
+}
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3.8rem;
+    }
 }
 
 
