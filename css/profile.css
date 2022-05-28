@@ -39,11 +39,13 @@
 }
 .modal form {
   width: 80%;
+  height: 100%;
   max-width: 450px;
   padding: 3rem;
   margin: 3rem auto;
   background-color: white;
   align-items: center;
+  overflow: scroll;
 }
 .modal form h3 {
   text-align: center;

@@ -44,11 +44,13 @@
 
     form {
         width: 80%;
+        height: 100%;
         max-width: 450px;
         padding: $spacing-xxl;
         margin: $spacing-xxl auto;
         background-color: white;
         align-items: center;
+        overflow: scroll;
 
         h3 {
             text-align: center;
