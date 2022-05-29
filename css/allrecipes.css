@@ -533,6 +533,31 @@ button.button-secondary:hover {
   .filter-wrapper {
     display: block;
   }
+  .filter-wrapper .filter .tab {
+    display: flex;
+    flex-direction: row;
+  }
+  .filter-wrapper .filter .tab button {
+    padding: 1rem;
+    margin-left: 0.5rem;
+  }
+  .filter-wrapper .tabcontent-wrapper {
+    background-color: #C6C6C6;
+    margin-top: 1rem;
+  }
+  .filter-wrapper .tabcontent-wrapper .tabcontent {
+    padding: 1rem;
+  }
+  .filter-wrapper .tabcontent-wrapper .tabcontent .time-line-desktop hr {
+    background-color: #1C1C1C;
+  }
+  .filter-wrapper .tabcontent-wrapper .tabcontent .cuisine-wrapper-desktop button {
+    margin-top: 0.5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 0rem;
+  }
 
   .filter-mobile {
     display: none;

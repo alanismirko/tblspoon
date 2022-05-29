@@ -129,6 +129,38 @@
 
     .filter-wrapper{
         display: block;
+        .filter{
+            .tab{
+                display: flex;
+                flex-direction: row;
+                button{
+                    padding: 1rem;
+                    margin-left: $spacing-sm;
+                }
+            }
+        }
+        .tabcontent-wrapper{
+            background-color: $color-grey-light;
+            margin-top: $spacing-md;
+            .tabcontent{
+                padding: $spacing-md;
+                .time-line-desktop{
+                    hr{
+                        background-color: $color-text;
+                    }
+                }
+                .cuisine-wrapper-desktop{
+                    button{
+                        margin-top: $spacing-sm;
+                        width: 6rem;
+                        height: 6rem;
+                        border-radius: $round-full;
+                        padding: 0rem;
+                    }
+                }
+            }
+        }
+
     }
 
     .filter-mobile{

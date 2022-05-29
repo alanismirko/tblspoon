@@ -94,7 +94,7 @@
                 <div class="show-filters-wrapper">
                     <h2>Cooking time</h2>
                     <div class="time-line">
-                        <img src="images/Skærmbillede_2022-05-29_210039-removebg-preview.png">
+                        <img src="images/line.png">
                     </div>
                     <hr>
                     <div class="difficulty">
@@ -127,7 +127,7 @@
                         <button class="button-secondary">Dessert</button>
                     </div>
                     <hr>
-                    <div class="iietary">
+                    <div class="dietary">
                         <h2>Dietary</h2>
                         <button class="button-secondary">Vegetarian</button>
                         <button class="button-secondary">Vegan</button>
@@ -153,38 +153,72 @@
 
         </div>
         <div class="filter-wrapper">
-            <div class="filer">
+            <div class="filter">
                 <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'cooking-time')">Cooking time</button>
-                    <button class="tablinks" onclick="openTab(event, 'difficulty')">Difficulty</button>
-                    <button class="tablinks" onclick="openTab(event, 'dish-type')">Dish type</button>
-                    <button class="tablinks" onclick="openTab(event, 'dietary')">Dietary</button>
-                    <button class="tablinks" onclick="openTab(event, 'cuisine')">Cusine</button>
-                    <button class="tablinks" onclick="openTab(event, 'ingredients')">Ingredients</button>
+                    <button class="tablinks button-primary" onclick="openTab(event, 'cooking-time')">Cooking time</button>
+                    <button class="tablinks button-primary" onclick="openTab(event, 'difficulty')">Difficulty</button>
+                    <button class="tablinks button-primary" onclick="openTab(event, 'dish-type')">Dish type</button>
+                    <button class="tablinks button-primary" onclick="openTab(event, 'dietary')">Dietary</button>
+                    <button class="tablinks button-primary" onclick="openTab(event, 'cuisine')">Cusine</button>
+                    <button class="tablinks button-primary" onclick="openTab(event, 'ingredients')">Ingredients</button>
                   </div>
                   
-                  <div id="cooking-time" class="tabcontent">
-                    <h3>Cooking time</h3>
-                  </div>
-                  
-                  <div id="difficulty" class="tabcontent">
-                    <h3>Difficulty</h3>
-                  </div>
-                  
-                  <div id="dish-type" class="tabcontent">
-                    <h3>Dish type</h3>
-                  </div>
-
-                  <div id="dietary" class="tabcontent">
-                    <h3>Dietary</h3>
-                  </div>
-
-                  <div id="cuisine" class="tabcontent">
-                    <h3>Cuisine</h3>
-                  </div>
-
-                  <div id="ingredients" class="tabcontent">
-                    <h3>Ingredients</h3>
+                  <div class="tabcontent-wrapper">
+                    <div id="cooking-time" class="tabcontent">
+                        <h2>Cooking time</h2>
+                        <div class="time-line-desktop">
+                            <hr>
+                        </div>
+                      </div>
+                      
+                      <div id="difficulty" class="tabcontent">
+                        <h2>Difficulty</h2>
+                        <div class="button-wrapper">
+                            <button class="button-secondary">Easy</button>
+                            <button class="button-secondary">Medium</button>
+                            <button class="button-secondary">Hard</button>
+                            <button class="button-secondary">Pro</button>
+                        </div>
+                      </div>
+                      
+                      <div id="dish-type" class="tabcontent">
+                        <h2>Dish type</h2>
+                        <button class="button-secondary">Breakfast</button>
+                        <button class="button-secondary">Lunch</button>
+                        <button class="button-secondary">Dinner</button>
+                        <button class="button-secondary">Dessert</button>
+                      </div>
+    
+                      <div id="dietary" class="tabcontent">
+                        <h2>Dietary</h2>
+                        <button class="button-secondary">Vegetarian</button>
+                        <button class="button-secondary">Vegan</button>
+                        <button class="button-secondary">Lactose-Free</button>
+                      </div>
+    
+                      <div id="cuisine" class="tabcontent">
+                        <h2>Cuisine</h2>
+                        <div class="cuisine-wrapper-desktop">
+                            <button class="button-primary">Italian</button>
+                            <button class="button-primary">American</button>
+                            <button class="button-primary">Asian</button>
+                            <button class="button-primary">Thai</button>
+                            <button class="button-primary">African</button>
+                            <button class="button-primary">Tapas</button>
+                        </div>
+                      </div>
+    
+                      <div id="ingredients" class="tabcontent">
+                          <h2>Ingredients</h2>
+                        <div class="ingredients-wrapper">
+                            <button class="button-primary">Egg</button>
+                            <button class="button-primary">Milk</button>
+                            <button class="button-primary">Oil</button>
+                            <button class="button-primary">Tuna</button>
+                            <button class="button-primary">Tomato</button>
+                            <button class="button-primary">Flour</button>
+                        </div>
+                      </div>
                   </div>
                 
             </div>
