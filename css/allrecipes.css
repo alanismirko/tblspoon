@@ -548,8 +548,11 @@ button.button-secondary:hover {
   .filter-wrapper .tabcontent-wrapper .tabcontent {
     padding: 1rem;
   }
-  .filter-wrapper .tabcontent-wrapper .tabcontent .time-line-desktop hr {
-    background-color: #1C1C1C;
+  .filter-wrapper .tabcontent-wrapper .tabcontent .time-line-desktop img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .filter-wrapper .tabcontent-wrapper .tabcontent .cuisine-wrapper-desktop button {
     margin-top: 0.5rem;
@@ -585,6 +588,13 @@ button.button-secondary:hover {
 
   .ads img {
     width: 50%;
+  }
+
+  .filter-wrapper .tabcontent-wrapper .tabcontent .time-line-desktop img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

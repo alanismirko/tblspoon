@@ -57,6 +57,8 @@
     }
 }
 
+
+
 .filter-wrapper{
     display: none;
 }
@@ -145,8 +147,11 @@
             .tabcontent{
                 padding: $spacing-md;
                 .time-line-desktop{
-                    hr{
-                        background-color: $color-text;
+                    img{
+                        width: 70%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
                     }
                 }
                 .cuisine-wrapper-desktop{
@@ -194,5 +199,21 @@
         img{
             width: 50%;
         }
+    }
+
+    .filter-wrapper{   
+        .tabcontent-wrapper{
+            .tabcontent{
+                .time-line-desktop{
+                    img{
+                        width: 40%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+
     }
 }

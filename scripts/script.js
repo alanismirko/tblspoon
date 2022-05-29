@@ -20,7 +20,6 @@ function openTab(evt, action) {
     }
     document.getElementById(action).style.display = "block";
     evt.currentTarget.className += " active";
-
   }
 
 function openModal () {
