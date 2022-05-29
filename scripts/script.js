@@ -29,3 +29,12 @@ function openModal () {
 function closeModal () {
   document.querySelector(".modal").classList.remove("show");
 }
+
+function openFilters() {
+  var  button = document.querySelector(".show-filters");
+  if (button.style.display === "block") {
+    button.style.display = "none";
+  } else {
+    button.style.display = "block";
+  }
+}

@@ -435,6 +435,7 @@ button.button-secondary:hover {
   background-color: #C6C6C6;
   padding: 0.5rem;
   margin-bottom: 2rem;
+  border-radius: 1rem;
 }
 .all-recipes .recipe-card a {
   text-decoration: none;
@@ -449,6 +450,7 @@ button.button-secondary:hover {
 }
 .all-recipes .recipe-card .img-wrapper img {
   width: 100%;
+  border-radius: 1rem;
 }
 .all-recipes .recipe-card .card-text-wrapper {
   display: flex;
@@ -472,6 +474,45 @@ button.button-secondary:hover {
   padding: 0.2rem;
 }
 
+.filter-wrapper {
+  display: none;
+}
+
+.filter-mobile button {
+  width: 100%;
+}
+.filter-mobile .show-filters {
+  display: none;
+  padding-top: 1rem;
+}
+.filter-mobile .show-filters .show-filters-wrapper .time-line img {
+  width: 100%;
+}
+.filter-mobile .show-filters .show-filters-wrapper .difficulty .button-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.filter-mobile .show-filters .show-filters-wrapper .difficulty .button-wrapper button {
+  flex: 20%;
+}
+.filter-mobile .show-filters .show-filters-wrapper .cuisine .cuisine-wrapper button {
+  margin-top: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 0rem;
+}
+.filter-mobile .show-filters .show-filters-wrapper .ingredients-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.filter-mobile .show-filters .show-filters-wrapper .ingredients-wrapper button {
+  flex: 10%;
+  margin: 0.2rem;
+}
+
 .ads img {
   width: 100%;
 }
@@ -487,6 +528,42 @@ button.button-secondary:hover {
   }
   .all-recipes .recipe-card h2 {
     font-size: 2em;
+  }
+
+  .filter-wrapper {
+    display: block;
+  }
+  .filter-wrapper .filter .tab {
+    display: flex;
+    flex-direction: row;
+  }
+  .filter-wrapper .filter .tab button {
+    padding: 1rem;
+    margin-left: 0.5rem;
+  }
+  .filter-wrapper .tabcontent-wrapper {
+    background-color: #C6C6C6;
+    margin-top: 1rem;
+  }
+  .filter-wrapper .tabcontent-wrapper .tabcontent {
+    padding: 1rem;
+  }
+  .filter-wrapper .tabcontent-wrapper .tabcontent .time-line-desktop img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .filter-wrapper .tabcontent-wrapper .tabcontent .cuisine-wrapper-desktop button {
+    margin-top: 0.5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 0rem;
+  }
+
+  .filter-mobile {
+    display: none;
   }
 
   .ads img {
@@ -511,6 +588,13 @@ button.button-secondary:hover {
 
   .ads img {
     width: 50%;
+  }
+
+  .filter-wrapper .tabcontent-wrapper .tabcontent .time-line-desktop img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -45,6 +45,7 @@
             background-color: $color-grey-light;
             padding: $spacing-sm;
             margin-bottom: $spacing-xl;
+            border-radius: 1rem;
             a{
                 text-decoration: none;
             }
@@ -60,6 +61,7 @@
             .img-wrapper{
                 img{
                     width: 100%;
+                    border-radius: 1rem;
                 }
             }
             .card-text-wrapper{

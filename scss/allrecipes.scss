@@ -12,6 +12,7 @@
         background-color: $color-grey-light;
         padding: $spacing-sm;
         margin-bottom: $spacing-xl;
+        border-radius: 1rem;
         a{
             text-decoration: none;
         }
@@ -27,6 +28,7 @@
         .img-wrapper{
             img{
                 width: 100%;
+                border-radius: 1rem;
             }
 
         }
@@ -55,6 +57,59 @@
     }
 }
 
+
+
+.filter-wrapper{
+    display: none;
+}
+
+.filter-mobile{
+    button{
+        width: 100%;
+    }
+    .show-filters{
+        display: none;
+        padding-top: $spacing-md;
+        .show-filters-wrapper{
+            .time-line{
+                img{
+                    width: 100%;
+                }
+            }
+            .difficulty{
+                .button-wrapper{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    button{
+                        flex: 20%;
+                    }
+                }
+            }
+            .cuisine{
+                .cuisine-wrapper{
+                    button{
+                        margin-top: $spacing-sm;
+                        width: 5rem;
+                        height: 5rem;
+                        border-radius: $round-full;
+                        padding: 0rem;
+                    }
+                }
+            }
+            .ingredients-wrapper{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                button{
+                    flex: 10%;
+                    margin: $spacing-xs;
+                }
+            }
+        }
+    }
+}
+
 .ads{
     img{
         width: 100%;
@@ -72,6 +127,49 @@
                 font-size: 2em;
             }
         }
+    }
+
+    .filter-wrapper{
+        display: block;
+        .filter{
+            .tab{
+                display: flex;
+                flex-direction: row;
+                button{
+                    padding: 1rem;
+                    margin-left: $spacing-sm;
+                }
+            }
+        }
+        .tabcontent-wrapper{
+            background-color: $color-grey-light;
+            margin-top: $spacing-md;
+            .tabcontent{
+                padding: $spacing-md;
+                .time-line-desktop{
+                    img{
+                        width: 70%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .cuisine-wrapper-desktop{
+                    button{
+                        margin-top: $spacing-sm;
+                        width: 6rem;
+                        height: 6rem;
+                        border-radius: $round-full;
+                        padding: 0rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .filter-mobile{
+        display: none;
     }
 
     .ads{
@@ -101,5 +199,21 @@
         img{
             width: 50%;
         }
+    }
+
+    .filter-wrapper{   
+        .tabcontent-wrapper{
+            .tabcontent{
+                .time-line-desktop{
+                    img{
+                        width: 40%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+
     }
 }
