@@ -451,6 +451,13 @@ button.button-secondary:hover {
 .recipe-heading .collection img {
   width: 10%;
 }
+.recipe-heading h3 {
+  text-align: center;
+}
+.recipe-heading h3 a {
+  color: #FD8D27;
+  text-decoration: none;
+}
 
 .ingredients {
   display: flex;

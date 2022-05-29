@@ -435,6 +435,7 @@ button.button-secondary:hover {
   background-color: #C6C6C6;
   padding: 0.5rem;
   margin-bottom: 2rem;
+  border-radius: 1rem;
 }
 .all-recipes .recipe-card a {
   text-decoration: none;
@@ -449,6 +450,7 @@ button.button-secondary:hover {
 }
 .all-recipes .recipe-card .img-wrapper img {
   width: 100%;
+  border-radius: 1rem;
 }
 .all-recipes .recipe-card .card-text-wrapper {
   display: flex;
