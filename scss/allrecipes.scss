@@ -57,6 +57,57 @@
     }
 }
 
+.filter-wrapper{
+    display: none;
+}
+
+.filter-mobile{
+    button{
+        width: 100%;
+    }
+    .show-filters{
+        display: none;
+        padding-top: $spacing-md;
+        .show-filters-wrapper{
+            .time-line{
+                img{
+                    width: 100%;
+                }
+            }
+            .difficulty{
+                .button-wrapper{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    button{
+                        flex: 20%;
+                    }
+                }
+            }
+            .cuisine{
+                .cuisine-wrapper{
+                    button{
+                        margin-top: $spacing-sm;
+                        width: 5rem;
+                        height: 5rem;
+                        border-radius: $round-full;
+                        padding: 0rem;
+                    }
+                }
+            }
+            .ingredients-wrapper{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                button{
+                    flex: 10%;
+                    margin: $spacing-xs;
+                }
+            }
+        }
+    }
+}
+
 .ads{
     img{
         width: 100%;
@@ -74,6 +125,14 @@
                 font-size: 2em;
             }
         }
+    }
+
+    .filter-wrapper{
+        display: block;
+    }
+
+    .filter-mobile{
+        display: none;
     }
 
     .ads{

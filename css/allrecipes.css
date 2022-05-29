@@ -474,6 +474,45 @@ button.button-secondary:hover {
   padding: 0.2rem;
 }
 
+.filter-wrapper {
+  display: none;
+}
+
+.filter-mobile button {
+  width: 100%;
+}
+.filter-mobile .show-filters {
+  display: none;
+  padding-top: 1rem;
+}
+.filter-mobile .show-filters .show-filters-wrapper .time-line img {
+  width: 100%;
+}
+.filter-mobile .show-filters .show-filters-wrapper .difficulty .button-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.filter-mobile .show-filters .show-filters-wrapper .difficulty .button-wrapper button {
+  flex: 20%;
+}
+.filter-mobile .show-filters .show-filters-wrapper .cuisine .cuisine-wrapper button {
+  margin-top: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 0rem;
+}
+.filter-mobile .show-filters .show-filters-wrapper .ingredients-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.filter-mobile .show-filters .show-filters-wrapper .ingredients-wrapper button {
+  flex: 10%;
+  margin: 0.2rem;
+}
+
 .ads img {
   width: 100%;
 }
@@ -489,6 +528,14 @@ button.button-secondary:hover {
   }
   .all-recipes .recipe-card h2 {
     font-size: 2em;
+  }
+
+  .filter-wrapper {
+    display: block;
+  }
+
+  .filter-mobile {
+    display: none;
   }
 
   .ads img {
