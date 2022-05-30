@@ -2,7 +2,8 @@
 
 .container {
     margin: $spacing-xxl auto;
-    max-width: 1024px; 
+    max-width: 1024px;
+    gap: $spacing-xxl
 }
 
 #hero {
@@ -20,18 +21,87 @@
         padding: $spacing-md;
     }
 
-    h2, p {
-        margin: 0;
-        padding: $spacing-md;
-    }
+}
 
-    p {
-        text-align: justify;
-    }
+.container-profile-info {
+    width: 100%;
+}
 
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     button {
-        margin-left: $spacing-md;
+        width: fit-content
     }
+}
+
+.profile-info {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-xs;
+
+        div {
+        }
+        div:first-child {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: smaller;
+            padding-bottom: $spacing-xs;
+            color: $color-grey-dark;
+            text-align: left;
+
+            width: 100%;
+            display:inline-block
+        }
+
+        input {
+            border: 1px solid $color-secondary;
+            border-radius: 2px;
+            margin: 0;
+            padding: $spacing-sm;
+
+            width: 100%;
+            display:inline-block
+        }
+
+        textarea {
+            border: 1px solid $color-secondary;
+            border-radius: 2px;
+            padding: $spacing-sm;
+            text-align: left;
+        }
+        
+        button {
+            width:fit-content;
+            margin-left: auto;
+        }
+    }
+}
+
+
+@media only screen and (min-width: map-get($breakPoints, md)) {
+input {
+    width: 79%;
+
+}
+label {
+    width: 20%;
+
+}
+}
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    .container-profile-info {
+        width: 60%;
+    }
+
 }
 
 .modal {
@@ -43,7 +113,7 @@
     background-color: rgba(60, 60, 60, 0.75);
 
     form {
-        position:relative;
+        position: relative;
         width: 80%;
         height: 100%;
         max-width: 450px;
@@ -85,14 +155,12 @@
 
         button {
             margin-left: $spacing-sm;
-
         }
-        
     }
 }
 
 #my-recipes {
-    article{
+    article {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

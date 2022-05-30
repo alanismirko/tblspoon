@@ -98,24 +98,37 @@
     <main>
 
         <section class="container" id="hero">
-            <article>
+            <article class="container-profile-image">
                 <img src="./images/users/user.jpg" class="profile-image" alt="profile image" />
             </article>
-            <article>
+            <article class="container-profile-info">
                 <h2>ThomsPlate</h2>
-                <p>
-                    Hi, I am Thomas and I am here to share my passion for cooking. It started as a casual hobby for nights and weekends while I was working as an accountant, but guess what: I said goodbye to the numbers and invoices, and the world opened up to me - hello world, hello yummy dishes.
-                    Enjoy my recipes, which I created with all my heart! 
-                </p>
-                <button class="button-primary" onclick="openModal()">
-                    Add recipe
-                </button>
+                <div class="profile-info">
+                    <form action="update-user-info">
+                        <div>
+                            <label for="">Bio</label>
+                            <textarea
+                                rows="6">Hi, I am Thomas and I am here to share my passion for cooking. It started as a casual hobby for nights and weekends while I was working as an accountant, but guess what: I said goodbye to the numbers and invoices, and the world opened up to me - hello world, hello yummy dishes. Enjoy my recipes, which I created with all my heart!</textarea>
+                        </div>
+                        <div>
+                            <label for="">E-mail address</label>
+                            <input type="text" value="thomsplate@gmail.com">
+                        </div>
+
+                        <div>
+                            <label for="">Password</label>
+                            <input type="password" value="thisismypassword1">
+                        </div>
+
+                        <button class="button-primary">Update info</button>
+                    </form>
+                </div>
             </article>
         </section>
 
         <div class="modal hide">
             <form onsubmit="return false">
-                <img class="icon close-icon" src="./images/icons/close-icon.svg" alt="close" onclick="closeModal()" >
+                <img class="icon close-icon" src="./images/icons/close-icon.svg" alt="close" onclick="closeModal()">
 
                 <h3>Add new recipe</h3>
                 <div>
@@ -148,111 +161,119 @@
         </div>
 
         <section class="container" id="my-recipes">
+
+
             <article>
-                <h2>My recipes</h2>
+                <div class="container-header">
+                    <h2>My recipes</h2>
+
+                    <button class="button-primary" onclick="openModal()">
+                        Add recipe
+                    </button>
+                </div>
+                <div class="all-recipes">
+
+                    <div class="recipe-card">
+                        <div class="img-wrapper">
+                            <img src="./images/food-images/spaghetti.webp" alt="spaghetti">
+                        </div>
+                        <h4>Italian spaghetti</h4>
+                        <div class="card-text-wrapper">
+
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                    <p>1 h</p>
+                                </div>
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                    <p>Medium</p>
+                                </div>
+                            </div>
+                            <div class="card-collection">
+                                <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                                <p>Add to collection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="img-wrapper">
+                            <img src="images/food-images/cheesecake.webp" alt="cheesecake">
+                        </div>
+                        <h4>Cheesecake</h4>
+                        <div class="card-text-wrapper">
+                            <div class="card-info">
+
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                    <p>1 h</p>
+                                </div>
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                    <p>Hard</p>
+                                </div>
+                            </div>
+                            <div class="card-collection">
+                                <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                                <p>Add to collection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="img-wrapper">
+                            <img src="images/food-images/tortilla.webp" alt="tortilla">
+                        </div>
+                        <h4>Tortilla wrap</h4>
+                        <div class="card-text-wrapper">
+                            <div class="card-info">
+
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                    <p>45 min</p>
+                                </div>
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                    <p>Medium</p>
+                                </div>
+                            </div>
+                            <div class="card-collection">
+                                <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                                <p>Add to collection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="img-wrapper">
+                            <img src="images/food-images/steak.webp" alt="steak">
+                        </div>
+                        <h4>Perfect steak</h4>
+                        <div class="card-text-wrapper">
+                            <div class="card-info">
+
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                    <p>2 h</p>
+                                </div>
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                    <p>Hard</p>
+                                </div>
+                            </div>
+                            <div class="card-collection">
+                                <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                                <p>Add to collection</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
             </article>
-            <div class="all-recipes">
 
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="./images/food-images/spaghetti.webp" alt="spaghetti">
-                    </div>
-                    <h4>Italian spaghetti</h4>
-                    <div class="card-text-wrapper">
-
-                        <div class="card-info">
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>1 h</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Medium</p>
-                        </div>
-                        </div>
-                        <div class="card-collection">
-                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
-                            <p>Add to collection</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/cheesecake.webp" alt="cheesecake">
-                    </div>
-                    <h4>Cheesecake</h4>
-                    <div class="card-text-wrapper">
-                        <div class="card-info">
-
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>1 h</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Hard</p>
-                        </div>
-                        </div>
-                        <div class="card-collection">
-                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
-                            <p>Add to collection</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/tortilla.webp" alt="tortilla">
-                    </div>
-                    <h4>Tortilla wrap</h4>
-                    <div class="card-text-wrapper">
-                        <div class="card-info">
-
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>45 min</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Medium</p>
-                        </div>
-                        </div>
-                        <div class="card-collection">
-                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
-                            <p>Add to collection</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/steak.webp" alt="steak">
-                    </div>
-                    <h4>Perfect steak</h4>
-                    <div class="card-text-wrapper">
-                        <div class="card-info">
-
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>2 h</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Hard</p>
-                        </div>
-                        </div>
-                        <div class="card-collection">
-                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
-                            <p>Add to collection</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            </div>
         </section>
 
         <section class="container" id="ad">
@@ -270,14 +291,14 @@
                         <div class="card-text-wrapper">
                             <div class="card-info">
 
-                            <div class="card-text">
-                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                                <p>30 min</p>
-                            </div>
-                            <div class="card-text">
-                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                                <p>Easy</p>
-                            </div>
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                    <p>30 min</p>
+                                </div>
+                                <div class="card-text">
+                                    <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                    <p>Easy</p>
+                                </div>
                             </div>
                             <div class="card-collection">
                                 <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
@@ -296,14 +317,14 @@
                     <div class="card-text-wrapper">
                         <div class="card-info">
 
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>15 min</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Easy</p>
-                        </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                <p>15 min</p>
+                            </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                <p>Easy</p>
+                            </div>
                         </div>
                         <div class="card-collection">
                             <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
@@ -320,14 +341,14 @@
                     <div class="card-text-wrapper">
                         <div class="card-info">
 
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>1 h</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Medium</p>
-                        </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                <p>1 h</p>
+                            </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                <p>Medium</p>
+                            </div>
                         </div>
                         <div class="card-collection">
                             <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
@@ -344,14 +365,14 @@
                     <div class="card-text-wrapper">
                         <div class="card-info">
 
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>1 h</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Hard</p>
-                        </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                <p>1 h</p>
+                            </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                <p>Hard</p>
+                            </div>
                         </div>
                         <div class="card-collection">
                             <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
@@ -368,14 +389,14 @@
                     <div class="card-text-wrapper">
                         <div class="card-info">
 
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>45 min</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Medium</p>
-                        </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                <p>45 min</p>
+                            </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                <p>Medium</p>
+                            </div>
                         </div>
                         <div class="card-collection">
                             <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
@@ -392,14 +413,14 @@
                     <div class="card-text-wrapper">
                         <div class="card-info">
 
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>2 h</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Hard</p>
-                        </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                <p>2 h</p>
+                            </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                <p>Hard</p>
+                            </div>
                         </div>
                         <div class="card-collection">
                             <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
@@ -416,14 +437,14 @@
                     <div class="card-text-wrapper">
                         <div class="card-info">
 
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>50 min</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Medium</p>
-                        </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                <p>50 min</p>
+                            </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                <p>Medium</p>
+                            </div>
                         </div>
                         <div class="card-collection">
                             <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
@@ -440,14 +461,14 @@
                     <div class="card-text-wrapper">
                         <div class="card-info">
 
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
-                            <p>55 min</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
-                            <p>Easy</p>
-                        </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                <p>55 min</p>
+                            </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                <p>Easy</p>
+                            </div>
                         </div>
                         <div class="card-collection">
                             <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">

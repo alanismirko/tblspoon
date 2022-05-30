@@ -39,9 +39,16 @@ hr {
     opacity: 0.4;
 }
 
-section {
-    padding-top: $spacing-xxl;
+section:not(:first-of-type) {
+    padding-top: $spacing-md;
 }
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    section:not(:first-of-type) {
+        padding-top: $spacing-xxl;
+    }
+}
+
 
 // TYPOGRAPHY
 html,
@@ -123,6 +130,11 @@ a {
     }
 }
 
+textarea, input {
+    font-family: $font-main
+}
+
+
 // BUTTONS
 button {
     display: inline-block;
@@ -161,6 +173,7 @@ button {
 }
 
 .close-icon {
+    cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;

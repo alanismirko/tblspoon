@@ -529,8 +529,14 @@ hr {
   opacity: 0.4;
 }
 
-section {
-  padding-top: 3rem;
+section:not(:first-of-type) {
+  padding-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  section:not(:first-of-type) {
+    padding-top: 3rem;
+  }
 }
 
 html,
@@ -605,6 +611,10 @@ a {
   }
 }
 
+textarea, input {
+  font-family: "Montserrat", sans-serif;
+}
+
 button {
   display: inline-block;
   padding: 0.5rem 2rem;
@@ -642,6 +652,7 @@ button.button-secondary:hover {
 }
 
 .close-icon {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
