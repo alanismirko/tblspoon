@@ -554,6 +554,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+article h2 {
+  text-align: left;
+}
+
 h3 {
   font-family: "Akshar", sans-serif;
   text-transform: uppercase;
@@ -637,6 +641,13 @@ button.button-secondary:hover {
   height: 20px;
 }
 
+.close-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
 .recipe-name-desktop {
   display: none;
 }
@@ -649,6 +660,7 @@ button.button-secondary:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .recipe-heading img {
@@ -681,10 +693,6 @@ button.button-secondary:hover {
 
 .recipe-heading .collection img {
   width: 10%;
-}
-
-.recipe-heading h3 {
-  text-align: center;
 }
 
 .recipe-heading h3 a {
@@ -864,7 +872,7 @@ button.button-secondary:hover {
 
 @media only screen and (min-width: 1032px) {
   .ingredients {
-    margin-right: 5rem;
+    margin-right: 3rem;
   }
   .ads img {
     width: 50%;

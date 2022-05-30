@@ -426,6 +426,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+article h2 {
+  text-align: left;
+}
+
 h3 {
   font-family: "Akshar", sans-serif;
   text-transform: uppercase;

@@ -426,6 +426,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+article h2 {
+  text-align: left;
+}
+
 h3 {
   font-family: "Akshar", sans-serif;
   text-transform: uppercase;
@@ -519,6 +523,7 @@ button.button-secondary:hover {
 .recipe-heading {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .recipe-heading img {
   width: 100%;
@@ -540,9 +545,6 @@ button.button-secondary:hover {
 }
 .recipe-heading .collection img {
   width: 10%;
-}
-.recipe-heading h3 {
-  text-align: center;
 }
 .recipe-heading h3 a {
   color: #FD8D27;
@@ -675,7 +677,7 @@ button.button-secondary:hover {
 }
 @media only screen and (min-width: 1032px) {
   .ingredients {
-    margin-right: 5rem;
+    margin-right: 3rem;
   }
 
   .ads img {

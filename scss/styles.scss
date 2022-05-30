@@ -67,6 +67,12 @@ h2 {
     margin-bottom: 1rem;
 }
 
+article {
+    h2 {
+        text-align: left;
+    }
+}
+
 //paragraph-header
 h3 {
     font-family: $font-headers;
