@@ -43,7 +43,6 @@ section {
     padding-top: $spacing-xxl;
 }
 
-
 // TYPOGRAPHY
 html,
 body {
@@ -153,4 +152,11 @@ button {
 .icon {
     width: 20px;
     height: 20px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
 }

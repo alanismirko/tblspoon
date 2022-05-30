@@ -5,22 +5,12 @@
 }
 
 #hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
 #hero .profile-image {
   width: 50vw;
   max-width: 350px;
@@ -28,16 +18,13 @@
   border-radius: 50%;
   padding: 1rem;
 }
-
 #hero h2, #hero p {
   margin: 0;
   padding: 1rem;
 }
-
 #hero p {
   text-align: justify;
 }
-
 #hero button {
   margin-left: 1rem;
 }
@@ -50,7 +37,6 @@
   height: 100vh;
   background-color: rgba(60, 60, 60, 0.75);
 }
-
 .modal form {
   position: relative;
   width: 80%;
@@ -59,68 +45,45 @@
   padding: 3rem;
   margin: 3rem auto;
   background-color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   overflow: scroll;
 }
-
 .modal form h3 {
   text-align: center;
 }
-
 .modal form div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0.5rem;
 }
-
 .modal form div label {
   font-size: smaller;
   padding-bottom: 0.2rem;
   color: #4F4F4F;
 }
-
 .modal form div input {
   border: 1px solid #CAD7DD;
   border-radius: 2px;
   margin: 0;
   padding: 1rem;
 }
-
 .modal form div textarea {
   border: 1px solid #CAD7DD;
   border-radius: 2px;
   padding-top: 0.5rem;
   padding-bottom: 5rem;
 }
-
 .modal form button {
   margin-left: 0.5rem;
 }
 
 #my-recipes article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
 }
 
@@ -128,7 +91,6 @@
   margin: 0 auto;
   padding: 0;
 }
-
 #ad img {
   width: 100%;
   height: auto;
@@ -139,17 +101,12 @@
 }
 
 .show {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 @media only screen and (min-width: 1032px) {
   #hero {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     text-align: left;
   }
 }
