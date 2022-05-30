@@ -8,53 +8,7 @@
     margin-top: $spacing-xxl;
     display: flex;
     flex-direction: column;
-    .recipe-card{
-        background-color: $color-grey-light;
-        padding: $spacing-sm;
-        margin-bottom: $spacing-xl;
-        border-radius: 1rem;
-        a{
-            text-decoration: none;
-        }
-        h2{
-            color: $color-primary;
-            text-align: center;
-        }
-        p{
-            color: $color-text;
-            font-weight: 700;
-        }
 
-        .img-wrapper{
-            img{
-                width: 100%;
-                border-radius: 1rem;
-            }
-
-        }
-        .card-text-wrapper{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .card-text{
-                text-align: center;
-                img{
-                    width: 10%;
-                }
-                p{
-                    padding: $spacing-xs 0em 0em $spacing-sm;
-                }
-
-            }
-            .card-collection{
-                display: flex;
-                flex-direction: row;
-                p{
-                    padding: $spacing-xs
-                }
-            }
-        }
-    }
 }
 
 
@@ -123,9 +77,7 @@
         gap: $spacing-md;
         .recipe-card{
             flex: 45%;
-            h2{
-                font-size: 2em;
-            }
+
         }
     }
 
@@ -135,7 +87,7 @@
             .tab{
                 display: flex;
                 flex-direction: row;
-                button{
+                button:not(:first-child){
                     padding: 1rem;
                     margin-left: $spacing-sm;
                 }
@@ -189,9 +141,7 @@
         gap: $spacing-md;
         .recipe-card{
             flex: 20%;
-            h2{
-                font-size: 2em;
-            }
+
         }
     }
 

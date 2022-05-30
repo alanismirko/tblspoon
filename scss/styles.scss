@@ -1,8 +1,9 @@
 @import "var";
 @import "nav";
 @import "footer";
+@import "recipecard";
 
-
+// LAYOUT
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,13 @@ body {
 }
 
 main {
-    margin: $spacing-xxl;
+    margin: $spacing-sm;
+}
+
+@media only screen and (min-width: map-get($breakPoints, lg)) {
+    main {
+        margin: $spacing-xxl;
+    }
 }
 
 * {
@@ -32,10 +39,16 @@ hr {
     opacity: 0.4;
 }
 
+section {
+    padding-top: $spacing-xxl;
+}
+
+
 // TYPOGRAPHY
-html, body {
+html,
+body {
     font-family: $font-main;
-    color: $color-text
+    color: $color-text;
 }
 
 //page-header
@@ -43,6 +56,7 @@ h1 {
     font-family: $font-headers;
     text-transform: uppercase;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 //section-header
@@ -50,20 +64,23 @@ h2 {
     font-family: $font-headers;
     text-transform: uppercase;
     font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 //paragraph-header
 h3 {
     font-family: $font-headers;
     text-transform: uppercase;
-    margin-bottom:1.2rem;
+    margin-bottom: 1.2rem;
 }
 
 //grid-homepageitem header
 h4 {
     font-family: $font-headers;
     text-transform: uppercase;
-    margin-bottom:1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
 }
 
 //card header
@@ -71,15 +88,14 @@ h5 {
     font-family: $font-main;
     font-weight: 500;
     font-size: 1.2rem;
-    margin-bottom:1.2rem;
+    margin-bottom: 1.2rem;
 }
 
 .caption {
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-family: $font-main;
     color: $color-secondary;
     font-weight: 600;
-
 }
 
 p {
@@ -97,17 +113,19 @@ a {
     h2 {
         font-size: 3.8rem;
     }
+    h4 {
+        font-size: 1.8rem;
+    }
 }
-
 
 // BUTTONS
 button {
     display: inline-block;
     padding: $spacing-sm $spacing-xl;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 0.8rem;
     cursor: pointer;
-    transition: .18s ease-out;
+    transition: 0.18s ease-out;
 
     &.button-primary {
         background-color: $color-text;
@@ -129,12 +147,10 @@ button {
             color: white;
         }
     }
-
 }
-
 
 // GRAPHICS
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }

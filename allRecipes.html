@@ -26,16 +26,22 @@
                     <span></span>
                     <span></span>
                 </label>
-                <img class="logo" src="./images/logo-horizontal-white.svg" alt="">
-                <img class="icon search-icon" src="./images/search-light-icon.svg" alt="">
+
+                <span class="container-logo">
+                    <a href="./index.html">
+                        <img class="logo" src="./images/logo/logo-horizontal-white.svg" alt="logo">
+                    </a>
+                </span>
+
+                <img class="icon search-icon" src="./images/icons/search-light-icon.svg" alt="search-icon">
             </div>
 
             <div class="menu-wrapper">
                 <nav>
                     <ul>
-                        <li><a href="/allRecipes.html">Recipes</a></li>
-                        <li><a href="#">Log in</a></li>
-                        <li><a href="#">Sign up</a></li>
+                        <li><a href="./allRecipes.html">Recipes</a></li>
+                        <li><a href="./login.html">Log in</a></li>
+                        <li><a href="./login.html">Sign up</a></li>
                     </ul>
                     <hr>
                     <ul>
@@ -52,8 +58,8 @@
                         <li><a href="#">Contact us</a></li>
                     </ul>
                     <div class="some-icon-container">
-                        <img class="icon" src="./images/ig-icon.svg" alt="">
-                        <img class="icon" src="./images/fb-icon.svg" alt="">
+                        <img class="icon" src="./images/icons/ig-icon.svg" alt="instagram">
+                        <img class="icon" src="./images/icons/fb-icon.svg" alt="facebook">
                     </div>
                 </nav>
             </div>
@@ -69,15 +75,19 @@
 
             <nav>
 
-                <img class="logo" src="./images/logo-horizontal-white.svg" alt="">
+                <span class="container-logo">
+                    <a href="./index.html">
+                        <img class="logo" src="./images/logo/logo-horizontal-white.svg" alt="logo">
+                    </a>
+                </span>
                 <span class="container-search">
                     <p>Search</p>
-                    <img class="icon search-icon" src="./images/search-dark-icon.svg" alt="">
+                    <img class="icon search-icon" src="./images/icons/search-dark-icon.svg" alt="search-icon">
                 </span>
                 <ul>
-                    <li><a href="/allRecipes.html">Recipes</a></li>
-                    <li><a href="">Log in</a></li>
-                    <li><a href="">Sign up</a></li>
+                    <li><a href="./allRecipes.html">Recipes</a></li>
+                    <li><a href="./login.html">Log in</a></li>
+                    <li><a href="./login.html">Sign up</a></li>
                 </ul>
 
             </nav>
@@ -92,13 +102,13 @@
 
             <div class="show-filters">
                 <div class="show-filters-wrapper">
-                    <h2>Cooking time</h2>
+                    <h5>Cooking time</h5>
                     <div class="time-line">
-                        <img src="images/line.png">
+                        <img src="./images/line.png">
                     </div>
                     <hr>
                     <div class="difficulty">
-                        <h2>Difficulty</h2>
+                        <h5>Difficulty</h5>
                         <div class="button-wrapper">
                             <button class="button-secondary">Easy</button>
                             <button class="button-secondary">Medium</button>
@@ -108,7 +118,7 @@
                     </div>
                     <hr>
                     <div class="cuisine">
-                        <h2>Cuisine</h2>
+                        <h5>Cuisine</h5>
                         <div class="cuisine-wrapper">
                             <button class="button-primary">Italian</button>
                             <button class="button-primary">American</button>
@@ -120,7 +130,7 @@
                     </div>
                     <hr>
                     <div class="dish-type">
-                        <h2>Dish type</h2>
+                        <h5>Dish type</h5>
                         <button class="button-secondary">Breakfast</button>
                         <button class="button-secondary">Lunch</button>
                         <button class="button-secondary">Dinner</button>
@@ -128,14 +138,14 @@
                     </div>
                     <hr>
                     <div class="dietary">
-                        <h2>Dietary</h2>
+                        <h5>Dietary</h5>
                         <button class="button-secondary">Vegetarian</button>
                         <button class="button-secondary">Vegan</button>
                         <button class="button-secondary">Lactose-Free</button>
                     </div>
                     <hr>
                     <div class="ingredients">
-                        <h2>Ingredients</h2>
+                        <h5>Ingredients</h5>
                         <div class="ingredients-wrapper">
                             <button class="button-primary">Egg</button>
                             <button class="button-primary">Milk</button>
@@ -155,49 +165,50 @@
         <div class="filter-wrapper">
             <div class="filter">
                 <div class="tab">
-                    <button class="tablinks button-primary" onclick="openTab(event, 'cooking-time')">Cooking time</button>
+                    <button class="tablinks button-primary" onclick="openTab(event, 'cooking-time')">Cooking
+                        time</button>
                     <button class="tablinks button-primary" onclick="openTab(event, 'difficulty')">Difficulty</button>
                     <button class="tablinks button-primary" onclick="openTab(event, 'dish-type')">Dish type</button>
                     <button class="tablinks button-primary" onclick="openTab(event, 'dietary')">Dietary</button>
                     <button class="tablinks button-primary" onclick="openTab(event, 'cuisine')">Cusine</button>
                     <button class="tablinks button-primary" onclick="openTab(event, 'ingredients')">Ingredients</button>
-                  </div>
-                  
-                  <div class="tabcontent-wrapper">
+                </div>
+
+                <div class="tabcontent-wrapper">
                     <div id="cooking-time" class="tabcontent">
-                        <h2>Cooking time</h2>
+                        <h5>Cooking time</h5>
                         <div class="time-line-desktop">
-                                <img src="images/line.png">
+                            <img src="./images/line.png">
                         </div>
-                      </div>
-                      
-                      <div id="difficulty" class="tabcontent">
-                        <h2>Difficulty</h2>
+                    </div>
+
+                    <div id="difficulty" class="tabcontent">
+                        <h5>Difficulty</h5>
                         <div class="button-wrapper">
                             <button class="button-secondary">Easy</button>
                             <button class="button-secondary">Medium</button>
                             <button class="button-secondary">Hard</button>
                             <button class="button-secondary">Pro</button>
                         </div>
-                      </div>
-                      
-                      <div id="dish-type" class="tabcontent">
-                        <h2>Dish type</h2>
+                    </div>
+
+                    <div id="dish-type" class="tabcontent">
+                        <h5>Dish type</h5>
                         <button class="button-secondary">Breakfast</button>
                         <button class="button-secondary">Lunch</button>
                         <button class="button-secondary">Dinner</button>
                         <button class="button-secondary">Dessert</button>
-                      </div>
-    
-                      <div id="dietary" class="tabcontent">
-                        <h2>Dietary</h2>
+                    </div>
+
+                    <div id="dietary" class="tabcontent">
+                        <h5>Dietary</h5>
                         <button class="button-secondary">Vegetarian</button>
                         <button class="button-secondary">Vegan</button>
                         <button class="button-secondary">Lactose-Free</button>
-                      </div>
-    
-                      <div id="cuisine" class="tabcontent">
-                        <h2>Cuisine</h2>
+                    </div>
+
+                    <div id="cuisine" class="tabcontent">
+                        <h5>Cuisine</h5>
                         <div class="cuisine-wrapper-desktop">
                             <button class="button-primary">Italian</button>
                             <button class="button-primary">American</button>
@@ -206,10 +217,10 @@
                             <button class="button-primary">African</button>
                             <button class="button-primary">Tapas</button>
                         </div>
-                      </div>
-    
-                      <div id="ingredients" class="tabcontent">
-                          <h2>Ingredients</h2>
+                    </div>
+
+                    <div id="ingredients" class="tabcontent">
+                        <h5>Ingredients</h5>
                         <div class="ingredients-wrapper">
                             <button class="button-primary">Egg</button>
                             <button class="button-primary">Milk</button>
@@ -218,191 +229,215 @@
                             <button class="button-primary">Tomato</button>
                             <button class="button-primary">Flour</button>
                         </div>
-                      </div>
-                  </div>
-                
+                    </div>
+                </div>
+
             </div>
         </div>
 
-            <div class="all-recipes">
-                <div class="recipe-card">
-                    <a href="recipe.html">
-                        <div class="img-wrapper">
-                            <img src="images/food-images/pizza.webp" alt="pizza">
-                        </div>
-                        <h2>Home made pizza</h2>
-                        <div class="card-text-wrapper">
+        <div class="all-recipes">
+            <div class="recipe-card">
+                <a href="./recipe.html">
+                    <div class="img-wrapper">
+                        <img src="./images/food-images/pizza.webp" alt="pizza">
+                    </div>
+                    <h4>Home made pizza</h4>
+                    <div class="card-text-wrapper">
+
+                        <div class="card-info">
                             <div class="card-text">
-                                <img class="icon" src="images/icons/time.svg" alt="time">
+                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
                                 <p>30 min</p>
                             </div>
                             <div class="card-text">
-                                <img class="icon" src="images/icons/gauge.svg" alt="time">
+                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
                                 <p>Easy</p>
                             </div>
-                            <div class="card-collection">
-                                <img class="icon" src="images/icons/heart.svg" alt="time">
-                                <p>Add to collection</p>
-                            </div>
-                        </div>
-
-                    </a>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/salad.webp" alt="salad">
-                    </div>
-                        <h2>Healthy salad</h2>
-                        <div class="card-text-wrapper">
-                            <div class="card-text">
-                                <img class="icon" src="images/icons/time.svg" alt="time">
-                                <p>15 min</p>
-                            </div>
-                            <div class="card-text">
-                                <img class="icon" src="images/icons/gauge.svg" alt="time">
-                                <p>Easy</p>
-                            </div>
-                            <div class="card-collection">
-                                <img class="icon" src="images/icons/heart.svg" alt="time">
-                                <p>Add to collection</p>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/spaghetti.webp" alt="spaghetti">
-                    </div>
-                    <h2>Italian spaghetti</h2>
-                    <div class="card-text-wrapper">
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/time.svg" alt="time">
-                            <p>1 h</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/gauge.svg" alt="time">
-                            <p>Medium</p>
                         </div>
                         <div class="card-collection">
-                            <img class="icon" src="images/icons/heart.svg" alt="time">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
                             <p>Add to collection</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/cheesecake.webp" alt="cheesecake">
-                    </div>
-                    <h2>Cheesecake</h2>
-                    <div class="card-text-wrapper">
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/time.svg" alt="time">
-                            <p>1 h</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/gauge.svg" alt="time">
-                            <p>Hard</p>
-                        </div>
-                        <div class="card-collection">
-                            <img class="icon" src="images/icons/heart.svg" alt="time">
-                            <p>Add to collection</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/tortilla.webp" alt="tortilla">
-                    </div>
-                    <h2>Tortilla wrap</h2>
-                    <div class="card-text-wrapper">
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/time.svg" alt="time">
-                            <p>45 min</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/gauge.svg" alt="time">
-                            <p>Medium</p>
-                        </div>
-                        <div class="card-collection">
-                            <img class="icon" src="images/icons/heart.svg" alt="time">
-                            <p>Add to collection</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/steak.webp" alt="steak">
-                    </div>
-                    <h2>Perfect steak</h2>
-                    <div class="card-text-wrapper">
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/time.svg" alt="time">
-                            <p>2 h</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/gauge.svg" alt="time">
-                            <p>Hard</p>
-                        </div>
-                        <div class="card-collection">
-                            <img class="icon" src="images/icons/heart.svg" alt="time">
-                            <p>Add to collection</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/brownies.webp" alt="brownies">
-                    </div>
-                    <h2>Brownies</h2>
-                    <div class="card-text-wrapper">
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/time.svg" alt="time">
-                            <p>50 min</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/gauge.svg" alt="time">
-                            <p>Medium</p>
-                        </div>
-                        <div class="card-collection">
-                            <img class="icon" src="images/icons/heart.svg" alt="time">
-                            <p>Add to collection</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="img-wrapper">
-                        <img src="images/food-images/tomato-soup.webp" alt="tomato-soup">
-                    </div>
-                    <h2>Tomato soup</h2>
-                    <div class="card-text-wrapper">
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/time.svg" alt="time">
-                            <p>55 min</p>
-                        </div>
-                        <div class="card-text">
-                            <img class="icon" src="images/icons/gauge.svg" alt="time">
-                            <p>Easy</p>
-                        </div>
-                        <div class="card-collection">
-                            <img class="icon" src="images/icons/heart.svg" alt="time">
-                            <p>Add to collection</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-                
+                </a>
             </div>
 
-            <div class="ads">
-                <img src="images/ads/ads_all_recipes.png">
+            <div class="recipe-card">
+                <div class="img-wrapper">
+                    <img src="./images/food-images/salad.webp" alt="salad">
+                </div>
+                <h4>Healthy salad</h4>
+                <div class="card-text-wrapper">
+                    <div class="card-info">
+
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                        <p>15 min</p>
+                    </div>
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                        <p>Easy</p>
+                    </div>
+                    </div>
+                    <div class="card-collection">
+                        <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                        <p>Add to collection</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="recipe-card">
+                <div class="img-wrapper">
+                    <img src="./images/food-images/spaghetti.webp" alt="spaghetti">
+                </div>
+                <h4>Italian spaghetti</h4>
+                <div class="card-text-wrapper">
+                    <div class="card-info">
+
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                        <p>1 h</p>
+                    </div>
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                        <p>Medium</p>
+                    </div>
+                    </div>
+                    <div class="card-collection">
+                        <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                        <p>Add to collection</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="img-wrapper">
+                    <img src="./images/food-images/cheesecake.webp" alt="cheesecake">
+                </div>
+                <h4>Cheesecake</h4>
+                <div class="card-text-wrapper">
+                    <div class="card-info">
+
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                        <p>1 h</p>
+                    </div>
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                        <p>Hard</p>
+                    </div>
+                    </div>
+                    <div class="card-collection">
+                        <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                        <p>Add to collection</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="img-wrapper">
+                    <img src="./images/food-images/tortilla.webp" alt="tortilla">
+                </div>
+                <h4>Tortilla wrap</h4>
+                <div class="card-text-wrapper">
+                    <div class="card-info">
+
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                        <p>45 min</p>
+                    </div>
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                        <p>Medium</p>
+                    </div>
+                    </div>
+                    <div class="card-collection">
+                        <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                        <p>Add to collection</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="img-wrapper">
+                    <img src="./images/food-images/steak.webp" alt="steak">
+                </div>
+                <h4>Perfect steak</h4>
+                <div class="card-text-wrapper">
+                    <div class="card-info">
+
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                        <p>2 h</p>
+                    </div>
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                        <p>Hard</p>
+                    </div>
+                    </div>
+                    <div class="card-collection">
+                        <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                        <p>Add to collection</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="img-wrapper">
+                    <img src="./images/food-images/brownies.webp" alt="brownies">
+                </div>
+                <h4>Brownies</h4>
+                <div class="card-text-wrapper">
+                    <div class="card-info">
+
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                        <p>50 min</p>
+                    </div>
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                        <p>Medium</p>
+                    </div>
+                    </div>
+                    <div class="card-collection">
+                        <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                        <p>Add to collection</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="img-wrapper">
+                    <img src="./images/food-images/tomato-soup.webp" alt="tomato-soup">
+                </div>
+                <h4>Tomato soup</h4>
+                <div class="card-text-wrapper">
+                    <div class="card-info">
+
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                        <p>55 min</p>
+                    </div>
+                    <div class="card-text">
+                        <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                        <p>Easy</p>
+                    </div>
+                    </div>
+                    <div class="card-collection">
+                        <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                        <p>Add to collection</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="ads">
+            <img src="./images/ads/ads_all_recipes.png">
+        </div>
 
         </div>
     </main>
@@ -441,8 +476,8 @@
                         <li><a href="#">Contact us</a></li>
                     </ul>
                     <div class="some-icon-container">
-                        <img class="icon" src="./images/ig-icon.svg" alt="">
-                        <img class="icon" src="./images/fb-icon.svg" alt="">
+                        <img class="icon" src="./images/icons/ig-icon.svg" alt="instagram">
+                        <img class="icon" src="./images/icons/fb-icon.svg" alt="facebook">
                     </div>
                 </div>
                 <div class="grid-3 container-newsletter">

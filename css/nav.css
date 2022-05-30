@@ -22,7 +22,7 @@
   }
 }
 
-nav a {
+nav ul a {
   font-family: "Akshar", sans-serif;
   text-transform: uppercase;
   display: block;
@@ -33,20 +33,20 @@ nav a {
 }
 
 @media only screen and (min-width: 480px) {
-  nav a {
+  nav ul a {
     padding: 0.5rem 0;
     font-size: 1.3rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  nav a {
+  nav ul a {
     font-size: 1.2rem;
   }
 }
 
 @media only screen and (min-width: 1032px) {
-  nav a {
+  nav ul a {
     font-size: 1.5rem;
   }
 }
@@ -63,9 +63,13 @@ nav a {
   gap: 1rem;
 }
 
-.menu-front .logo {
-  height: 80%;
+.menu-front .container-logo {
+  height: 100%;
   z-index: 2;
+}
+
+.menu-front .logo {
+  height: 100%;
 }
 
 .menu-front .search-icon {
@@ -205,6 +209,10 @@ nav a {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+.header-desktop nav .container-logo {
+  height: 100%;
 }
 
 .header-desktop nav .logo {

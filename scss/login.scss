@@ -1,81 +1,105 @@
 @import "styles";
 
-body{
+body {
     background-color: $color-secondary;
 }
 
-main{
-    transform: translate(0%, 30%);
+main {
+    transform: translate(0%);
+    // transform: translate(0%, 30%);
 }
 
-#signup{
+#signup {
     display: none;
 }
 
-.tab{
+.tab {
     display: flex;
-    button{
+    position: absolute;
+    top: 0;
+    width: $width-full;
+
+    button {
         width: $width-half;
+
+        &.active {
+            background-color: $color-secondary;
+            color: white;
+        }
     }
 }
 
-.tabcontent{
-    h3{
+.tabcontent {
+    padding-top: $spacing-xxl;
+
+    h3 {
         text-align: center;
         margin-top: 2rem;
     }
 }
 
 img {
-    width:$width-xs;
-    margin: 1rem auto auto ;
+    width: $width-xs;
+    margin: 1rem auto auto;
     display: block;
 }
 
-.login-social{
+.login-social {
     display: flex;
     justify-content: center;
-    button{
+    button {
         width: $width-full;
     }
 }
 
-.input-login{
+.input-modal {
     display: flex;
     flex-direction: column;
-    input{
+    input {
         padding: 0.5rem;
         margin-bottom: 0.5rem;
         border-radius: $round-xs;
     }
-    button{
+    button {
         width: $width-full;
+    }
+
+    .caption {
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        margin-top: $spacing-md;
     }
 }
 
-@media(min-width:768px) {
-    body{
+@media (min-width: 768px) {
+    body {
         background-color: white;
     }
-    main{
+
+    main {
         background-color: $color-secondary;
         width: 600px;
-        padding: 50px;
+        padding: $spacing-xxl;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-56%, -61%);
+        transform: translate(-56%, -58%);
         box-shadow: 15px 30px 35px $color-primary;
         -webkit-perspective: 300px;
         perspective: 300px;
     }
-    .input-login, .login-social{
+    .tabcontent {
+        padding-top: 0;
+    }
+
+    .tab {
+        margin-left: -$spacing-xxl;
+    }
+
+    .input-modal,
+    .login-social {
         width: calc($width-full - $width-sm);
-        margin: 1rem auto auto ;
+        margin: 1rem auto auto;
     }
 }
-
-
-
-
-

@@ -17,13 +17,73 @@
       "oAP" : "\/allRecipes.html",
       "oF" : 0
     },
-    "\/createRecipe.html" : {
+    "\/css\/allrecipes-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/allrecipes-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/allrecipes.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/allrecipes-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/allrecipes.css.map" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/createRecipe.html",
+      "oAP" : "\/css\/allrecipes.css.map",
       "oF" : 0
+    },
+    "\/css\/allrecipes.min-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/allrecipes.min-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/allrecipes.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/allrecipes.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/footer-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/footer-min-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/css\/footer.css" : {
       "aP" : 1,
@@ -37,6 +97,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/css\/footer.min-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/footer.min-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/css\/footer.min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -46,6 +118,62 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/css\/footer.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/homepage-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/homepage-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/homepage.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/homepage-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/homepage.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/homepage.css.map",
+      "oF" : 0
+    },
+    "\/css\/homepage.min-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/homepage.min-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/homepage.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/homepage.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
@@ -72,6 +200,14 @@
       "oAP" : "\/css\/login-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/css\/login.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/login.css.map",
+      "oF" : 0
     },
     "\/css\/login.min-min.css" : {
       "aP" : 1,
@@ -145,6 +281,94 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/css\/profile.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/profile-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/profile.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/profile.css.map",
+      "oF" : 0
+    },
+    "\/css\/profile.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/profile.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/recipe.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/recipe-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/recipe.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/recipe.css.map",
+      "oF" : 0
+    },
+    "\/css\/recipe.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/recipe.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/recipecard.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/recipecard-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/recipecard.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/recipecard.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/css\/styles-min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -168,6 +392,14 @@
       "oAP" : "\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/css\/styles.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/styles.css.map",
+      "oF" : 0
     },
     "\/css\/styles.min-min.css" : {
       "aP" : 1,
@@ -229,55 +461,276 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/images\/fb-icon.svg" : {
+    "\/images\/ads\/ad2.webp" : {
+      "ft" : 8388608,
+      "iS" : 49800,
+      "oA" : 0,
+      "oAP" : "\/images\/ads\/ad2.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/ads\/ads_all_recipes.png" : {
+      "ft" : 32768,
+      "iS" : 1158938,
+      "oA" : 0,
+      "oAP" : "\/images\/ads\/ads_all_recipes.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/ads\/ads_recipe.webp" : {
+      "ft" : 8388608,
+      "iS" : 115646,
+      "oA" : 0,
+      "oAP" : "\/images\/ads\/ads_recipe.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/food-images\/brownies.webp" : {
+      "ft" : 8388608,
+      "iS" : 94518,
+      "oA" : 0,
+      "oAP" : "\/images\/food-images\/brownies.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/food-images\/cheesecake.webp" : {
+      "ft" : 8388608,
+      "iS" : 127442,
+      "oA" : 0,
+      "oAP" : "\/images\/food-images\/cheesecake.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/food-images\/pizza.webp" : {
+      "ft" : 8388608,
+      "iS" : 149484,
+      "oA" : 0,
+      "oAP" : "\/images\/food-images\/pizza.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/food-images\/salad.webp" : {
+      "ft" : 8388608,
+      "iS" : 156078,
+      "oA" : 0,
+      "oAP" : "\/images\/food-images\/salad.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/food-images\/spaghetti.webp" : {
+      "ft" : 8388608,
+      "iS" : 158830,
+      "oA" : 0,
+      "oAP" : "\/images\/food-images\/spaghetti.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/food-images\/steak.webp" : {
+      "ft" : 8388608,
+      "iS" : 224726,
+      "oA" : 0,
+      "oAP" : "\/images\/food-images\/steak.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/food-images\/tomato-soup.webp" : {
+      "ft" : 8388608,
+      "iS" : 160560,
+      "oA" : 0,
+      "oAP" : "\/images\/food-images\/tomato-soup.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/food-images\/tortilla.webp" : {
+      "ft" : 8388608,
+      "iS" : 156922,
+      "oA" : 0,
+      "oAP" : "\/images\/food-images\/tortilla.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/icons\/close-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/images\/fb-icon.svg",
+      "oAP" : "\/images\/icons\/close-icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/images\/ig-icon.svg" : {
+    "\/images\/icons\/fb-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/images\/ig-icon.svg",
+      "oAP" : "\/images\/icons\/fb-icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/images\/logo-horizontal-white.svg" : {
+    "\/images\/icons\/gauge-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/images\/logo-horizontal-white.svg",
+      "oAP" : "\/images\/icons\/gauge-icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/images\/search-dark-icon.svg" : {
+    "\/images\/icons\/heart-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/images\/search-dark-icon.svg",
+      "oAP" : "\/images\/icons\/heart-icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/images\/search-light-icon.svg" : {
+    "\/images\/icons\/ig-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/images\/search-light-icon.svg",
+      "oAP" : "\/images\/icons\/ig-icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/images\/icons\/search-dark-icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/icons\/search-dark-icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/icons\/search-light-icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/icons\/search-light-icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/icons\/time-icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/icons\/time-icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/line.png" : {
+      "ft" : 32768,
+      "iS" : 3725,
+      "oA" : 0,
+      "oAP" : "\/images\/line.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/logo\/logo-black.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/logo\/logo-black.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/logo\/logo-horizontal-white.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/logo\/logo-horizontal-white.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/users\/user-comment-one.webp" : {
+      "ft" : 8388608,
+      "iS" : 5666042,
+      "oA" : 0,
+      "oAP" : "\/images\/users\/user-comment-one.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/users\/user-comment-two.webp" : {
+      "ft" : 8388608,
+      "iS" : 145362,
+      "oA" : 0,
+      "oAP" : "\/images\/users\/user-comment-two.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/images\/users\/user.jpg" : {
+      "ft" : 16384,
+      "iS" : 3539916,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/users\/user.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/index.html" : {
       "cB" : 0,
@@ -287,20 +740,20 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
+    "\/loggedUser.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/loggedUser.html",
+      "oF" : 0
+    },
     "\/login.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/login.html",
-      "oF" : 0
-    },
-    "\/myRecipes.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/myRecipes.html",
       "oF" : 0
     },
     "\/profile.html" : {
@@ -319,6 +772,17 @@
       "oAP" : "\/recipe.html",
       "oF" : 0
     },
+    "\/scripts\/script-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scripts\/script-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/scripts\/script.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -330,6 +794,32 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/scss\/allrecipes.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/scss\/allrecipes-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/scss\/allrecipes.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/scss\/allrecipes.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/footer.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -339,6 +829,32 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/footer.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/homepage.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/scss\/homepage-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/scss\/homepage.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/scss\/homepage.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -379,6 +895,60 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/nav.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/profile.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/scss\/profile.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/recipe.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/scss\/recipe-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/scss\/recipe.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/scss\/recipe.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/recipecard.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/recipecard.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

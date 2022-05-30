@@ -1,5 +1,4 @@
 /**
- * Temperature calculator 
  * @author Zuzana, Alexandra, Alanis
  * @version 1.0.0 May 2022
  */

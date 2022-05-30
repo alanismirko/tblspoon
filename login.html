@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta content-type="text/html" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
@@ -10,83 +11,91 @@
     <script src="scripts/script.js" defer></script>
     <script src="https://kit.fontawesome.com/7775ec9239.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <main>
         <div class="tab">
-            <button class="tablinks button-secondary" onclick="openTab(event, 'login')">Login</button>
+            <button class="tablinks button-secondary active" onclick="openTab(event, 'login')">Login</button>
             <button class="tablinks button-secondary" onclick="openTab(event, 'signup')">Signup</button>
-          </div>
-          
-          <div id="login" class="tabcontent">
+        </div>
 
-            <img src="images/logo/logo-login.svg">
+        <div id="login" class="tabcontent">
+
+            <img src="./images/logo/logo-black.svg">
 
             <h3>Login with:</h3>
 
             <div class="login-social">
                 <a href="https://www.facebook.com/login" target="_blank">
-                <button class="button-secondary">
+                    <button class="button-secondary">
                         <i class="fa fa-facebook fa-fw"></i> FACEBOOK
-                </button>
-                 </a>
-
-                 <a href="https://accounts.google.com/AccountChooser/signinchooser?flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank">
-                <button class="button-secondary">
-                        <i class="fa fa-google fa-fw"></i> GOOGLE
-                </button>
+                    </button>
                 </a>
-    
+
+                <a href="https://accounts.google.com/AccountChooser/signinchooser?flowName=GlifWebSignIn&flowEntry=AccountChooser"
+                    target="_blank">
+                    <button class="button-secondary">
+                        <i class="fa fa-google fa-fw"></i> GOOGLE
+                    </button>
+                </a>
+
             </div>
 
             <h3>or</h3>
 
-            <div class="input-login">
-                <input name="loginEmail" type="email" placeholder="Email address" required>
-                <input name="loginPassword" type="password" placeholder="Password" required>
-                <a href="loggedUser.html">
-                <button class="button-primary">
-                    Login
-                </button>
-                 </a>
+            <div class="input-modal">
+                <input name="loginEmail" type="email" placeholder="Email address" value="thomsplate@gmail.com" required>
+                <input name="loginPassword" type="password" placeholder="Password" value="thisismypassword1" required>
+                <a href="./loggedUser.html">
+                    <button class="button-primary">
+                        Log in
+                    </button>
+                </a>
+
+                <a class="caption" href="./index.html">&#8592; Back to homepage</a>
             </div>
 
-          </div>
-          
-          <div id="signup" class="tabcontent">
-            <img src="images/logo/logo-login.svg">
+        </div>
+
+        <div id="signup" class="tabcontent">
+            <img src="./images/logo/logo-black.svg">
 
             <h3>Signup with:</h3>
 
             <div class="login-social">
 
                 <a href="https://www.facebook.com/login" target="_blank">
-                <button class="button-secondary">
+                    <button class="button-secondary">
                         <i class="fa fa-facebook fa-fw"></i> FACEBOOK
-                </button>
+                    </button>
                 </a>
 
-                <a href="https://accounts.google.com/AccountChooser/signinchooser?flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank">
-                <button class="button-secondary" >
+                <a href="https://accounts.google.com/AccountChooser/signinchooser?flowName=GlifWebSignIn&flowEntry=AccountChooser"
+                    target="_blank">
+                    <button class="button-secondary">
                         <i class="fa fa-google fa-fw"></i> GOOGLE
-                </button>
+                    </button>
                 </a>
 
-    
+
             </div>
 
             <h3>or</h3>
 
-            <div class="input-login">
+            <div class="input-modal">
                 <input name="userName" type="text" placeholder="Name">
                 <input name="loginEmail" type="email" placeholder="Email address" required>
                 <input name="loginPassword" type="password" placeholder="Password" required>
                 <button class="button-primary">
-                    Signup
+                    Sign up
                 </button>
+
+                <a class="caption" href="./index.html">&#8592; Back to homepage</a>
             </div>
-          </div>
+        </div>
     </main>
-    
+
 </body>
+
 </html>

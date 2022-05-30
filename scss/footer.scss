@@ -50,12 +50,6 @@ footer {
         grid-template-areas: "grid-1 grid-2 grid-3";
     }
 
-    @media only screen and (min-width: map-get($breakPoints, xxl)) {
-        .grid-footer {
-            grid-template-columns: 1fr 0.7fr 0.7fr;
-        }
-    }
-
     [class*="grid"] {
         ul {
             li {
@@ -87,6 +81,16 @@ footer {
 
     a {
         color: $color-text;
+    }
+}
+
+@media only screen and (min-width: map-get($breakPoints, xl)) {
+    .footer-desktop {
+        padding: $spacing-xxl $spacing-xxl;
+
+        .grid-footer {
+            grid-template-columns: 1fr 0.7fr 0.7fr;
+        }
     }
 }
 

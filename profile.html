@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,467 +10,516 @@
     <link rel="stylesheet" href="./css/profile.css" />
     <link rel="stylesheet" href="./css/allrecipes.css" />
     <script src="scripts/script.js" defer></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="header-mobile">
-        <input type="checkbox" id="burger-checkbox" />
-        <div class="menu-front">
-          <label for="burger-checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <img class="logo" src="./images/logo-horizontal-white.svg" alt="" />
-          <img
-            class="icon search-icon"
-            src="./images/search-light-icon.svg"
-            alt=""
-          />
-        </div>
 
-        <div class="menu-wrapper">
-          <nav>
-            <ul>
-              <li><a href="/allRecipes.html">Recipes</a></li>
-              <li><a href="#">Log in</a></li>
-              <li><a href="#">Sign up</a></li>
-            </ul>
-            <hr />
-            <ul>
-              <p class="caption">Quick links</p>
-              <li><a href="#">Breakfast recipes</a></li>
-              <li><a href="#">Dinner recipes</a></li>
-              <li><a href="#">Healthy recipes</a></li>
-              <li><a href="#">Quick and easy recipes</a></li>
-            </ul>
-            <hr />
-            <ul>
-              <p class="caption">Helpful links</p>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Contact us</a></li>
-            </ul>
-            <div class="some-icon-container">
-              <img class="icon" src="./images/ig-icon.svg" alt="" />
-              <img class="icon" src="./images/fb-icon.svg" alt="" />
+        <!-- LOGGED IN USER NAV -->
+        <div class="header-mobile">
+
+            <input type="checkbox" id="burger-checkbox">
+            <div class="menu-front">
+                <label for="burger-checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <span class="container-logo">
+                    <a href="./index.html">
+                        <img class="logo" src="./images/logo/logo-horizontal-white.svg" alt="logo">
+                    </a>
+                </span>
+
+                <img class="icon search-icon" src="./images/icons/search-light-icon.svg" alt="search-icon">
             </div>
-          </nav>
+
+            <div class="menu-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="./allRecipes.html">Recipes</a></li>
+                        <li><a href="./profile.html"></a>Profile</li>
+                        <li><a href="./index.html">Log out</a></li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <p class="caption">Quick links</p>
+                        <li><a href="#">Breakfast recipes</a></li>
+                        <li><a href="#">Dinner recipes</a></li>
+                        <li><a href="#">Healthy recipes</a></li>
+                        <li><a href="#">Quick and easy recipes</a></li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <p class="caption">Helpful links</p>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    <div class="some-icon-container">
+                        <img class="icon" src="./images/icons/ig-icon.svg" alt="instagram">
+                        <img class="icon" src="./images/icons/fb-icon.svg" alt="facebook">
+                    </div>
+                </nav>
+            </div>
+
         </div>
-      </div>
 
-      <div class="sticky-bar">
-        <p class="caption">Recipe of the day:</p>
-        <p class="text">Zuccini gratin a la Ze</p>
-      </div>
+        <div class="sticky-bar">
+            <p class="caption"> Recipe of the day: </p>
+            <p class="text">Zuccini gratin a la Ze</p>
+        </div>
 
-      <div class="header-desktop">
-        <nav>
-          <img class="logo" src="./images/logo-horizontal-white.svg" alt="" />
-          <span class="container-search">
-            <p>Search</p>
-            <img
-              class="icon search-icon"
-              src="./images/search-dark-icon.svg"
-              alt=""
-            />
-          </span>
-          <ul>
-            <li><a href="/allRecipes.html">Recipes</a></li>
-            <li><a href="">Log in</a></li>
-            <li><a href="">Sign up</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="header-desktop">
+
+            <nav>
+
+                <span class="container-logo">
+                    <a href="./index.html">
+                        <img class="logo" src="./images/logo/logo-horizontal-white.svg" alt="logo">
+                    </a>
+                </span>
+                <span class="container-search">
+                    <p>Search</p>
+                    <img class="icon search-icon" src="./images/icons/search-dark-icon.svg" alt="search-icon">
+                </span>
+                <ul>
+                    <li><a href="./allRecipes.html">Recipes</a></li>
+                    <li><a href="./profile.html">Profile</a></li>
+                    <li><a href="./index.html">Log out</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
     </header>
+
     <main>
-      <section class="container" id="hero">
-        <article>
-          <img
-            src="images/christian-buehner-DItYlc26zVI-unsplash-square.jpg"
-            class="profile-image"
-            alt="profile image"
-          />
-        </article>
-        <article>
-          <h2>ThomsPlate</h2>
-          <p>
-            Hi, I am Thomas and I am here to share my passion for cooking. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-          <button class="button-primary" onclick="openModal()">
-            Add recipe
-          </button>
-        </article>
-      </section>
 
-      <div class="modal hide">
-        <form onsubmit="return false">
-            <h3>Add new recipe</h3>
-            <div>
-                <label for="">Recipe name</label>
-                <input id="" name="" type="" /> 
+        <section class="container" id="hero">
+            <article>
+                <img src="./images/users/user.jpg" class="profile-image" alt="profile image" />
+            </article>
+            <article>
+                <h2>ThomsPlate</h2>
+                <p>
+                    Hi, I am Thomas and I am here to share my passion for cooking. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat.
+                </p>
+                <button class="button-primary" onclick="openModal()">
+                    Add recipe
+                </button>
+            </article>
+        </section>
+
+        <div class="modal hide">
+            <img class="icon" src="./images/icons/close-icon.svg" alt="close">
+            <form onsubmit="return false">
+                <h3>Add new recipe</h3>
+                <div>
+                    <label for="">Recipe name</label>
+                    <input id="" name="" type="" />
+                </div>
+                <div>
+                    <label for="">Ingredients</label>
+                    <input id="" name="" type="" />
+                </div>
+                <div>
+                    <label for="">Cooking time</label>
+                    <input id="" name="" type="" />
+                </div>
+                <div>
+                    <label for="">Level</label>
+                    <input id="" name="" type="" />
+                </div>
+                <div>
+                    <label for="">Images</label>
+                    <!-- <input id="" name="" type="" />  -->
+                    <input type="file">
+                </div>
+                <div>
+                    <label for="">Instructions</label>
+                    <textarea id="" name="" type=""></textarea>
+                </div>
+                <button onclick="closeModal()" class="button-primary">Upload</button>
+            </form>
+        </div>
+
+        <section class="container" id="my-recipes">
+            <article>
+                <h2>My recipes</h2>
+            </article>
+            <div class="all-recipes">
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="./images/food-images/spaghetti.webp" alt="spaghetti">
+                    </div>
+                    <h4>Italian spaghetti</h4>
+                    <div class="card-text-wrapper">
+
+                        <div class="card-info">
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>1 h</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Medium</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/cheesecake.webp" alt="cheesecake">
+                    </div>
+                    <h4>Cheesecake</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>1 h</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Hard</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/tortilla.webp" alt="tortilla">
+                    </div>
+                    <h4>Tortilla wrap</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>45 min</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Medium</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/steak.webp" alt="steak">
+                    </div>
+                    <h4>Perfect steak</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>2 h</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Hard</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
-            <div>
-                <label for="">Ingredients</label>
-                <input id="" name="" type="" /> 
             </div>
-            <div>
-                <label for="">Cooking time</label>
-                <input id="" name="" type="" /> 
+        </section>
+
+        <section class="container" id="ad">
+            <img src="./images/ads/ad2.webp">
+        </section>
+
+        <section class="container" id="my-recipes">
+            <div class="all-recipes">
+                <div class="recipe-card">
+                    <a href="recipe.html">
+                        <div class="img-wrapper">
+                            <img src="./images/food-images/pizza.webp" alt="pizza">
+                        </div>
+                        <h4>Home made pizza</h4>
+                        <div class="card-text-wrapper">
+                            <div class="card-info">
+
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                                <p>30 min</p>
+                            </div>
+                            <div class="card-text">
+                                <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                                <p>Easy</p>
+                            </div>
+                            </div>
+                            <div class="card-collection">
+                                <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                                <p>Add to collection</p>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/salad.webp" alt="salad">
+                    </div>
+                    <h4>Healthy salad</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>15 min</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Easy</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/spaghetti.webp" alt="spaghetti">
+                    </div>
+                    <h4>Italian spaghetti</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>1 h</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Medium</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/cheesecake.webp" alt="cheesecake">
+                    </div>
+                    <h4>Cheesecake</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>1 h</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Hard</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/tortilla.webp" alt="tortilla">
+                    </div>
+                    <h4>Tortilla wrap</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>45 min</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Medium</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/steak.webp" alt="steak">
+                    </div>
+                    <h4>Perfect steak</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>2 h</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Hard</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/brownies.webp" alt="brownies">
+                    </div>
+                    <h4>Brownies</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>50 min</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Medium</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="img-wrapper">
+                        <img src="images/food-images/tomato-soup.webp" alt="tomato-soup">
+                    </div>
+                    <h4>Tomato soup</h4>
+                    <div class="card-text-wrapper">
+                        <div class="card-info">
+
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/time-icon.svg" alt="time">
+                            <p>55 min</p>
+                        </div>
+                        <div class="card-text">
+                            <img class="icon" src="./images/icons/gauge-icon.svg" alt="gauge">
+                            <p>Easy</p>
+                        </div>
+                        </div>
+                        <div class="card-collection">
+                            <img class="icon" src="./images/icons/heart-icon.svg" alt="heart">
+                            <p>Add to collection</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
-            <div>
-                <label for="">Level</label>
-                <input id="" name="" type="" /> 
+
             </div>
-            <div>
-                <label for="">Images</label>
-                <input id="" name="" type="" /> 
-            </div>
-            <div>
-                <label for="">Instructions</label>
-                <textarea id="" name="" type=""></textarea>
-            </div>
-          <button onclick="closeModal()" class="button-primary">Upload</button>
-        </form>
-      </div>
+        </section>
 
-      <section class="container" id="my-recipes">
-        <article>
-          <h2>My recipes</h2>
-        </article>
-        <div class="all-recipes">
-         
 
-         
 
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/spaghetti.webp" alt="spaghetti">
-              </div>
-              <h2>Italian spaghetti</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>1 h</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Medium</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/cheesecake.webp" alt="cheesecake">
-              </div>
-              <h2>Cheesecake</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>1 h</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Hard</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/tortilla.webp" alt="tortilla">
-              </div>
-              <h2>Tortilla wrap</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>45 min</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Medium</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/steak.webp" alt="steak">
-              </div>
-              <h2>Perfect steak</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>2 h</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Hard</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          
-          
-      </div>
-  </div>
-      </section>
-
-      <section class="container" id="ad">
-        <img src="images/vrbo-successful-banner-advertising-example.webp">
-      </section>
-
-      <section class="container" id="my-recipes">
-        <div class="all-recipes">
-          <div class="recipe-card">
-              <a href="recipe.html">
-                  <div class="img-wrapper">
-                      <img src="images/food-images/pizza.webp" alt="pizza">
-                  </div>
-                  <h2>Home made pizza</h2>
-                  <div class="card-text-wrapper">
-                      <div class="card-text">
-                          <img class="icon" src="images/icons/time.svg" alt="time">
-                          <p>30 min</p>
-                      </div>
-                      <div class="card-text">
-                          <img class="icon" src="images/icons/gauge.svg" alt="time">
-                          <p>Easy</p>
-                      </div>
-                      <div class="card-collection">
-                          <img class="icon" src="images/icons/heart.svg" alt="time">
-                          <p>Add to collection</p>
-                      </div>
-                  </div>
-
-              </a>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/salad.webp" alt="salad">
-              </div>
-                  <h2>Healthy salad</h2>
-                  <div class="card-text-wrapper">
-                      <div class="card-text">
-                          <img class="icon" src="images/icons/time.svg" alt="time">
-                          <p>15 min</p>
-                      </div>
-                      <div class="card-text">
-                          <img class="icon" src="images/icons/gauge.svg" alt="time">
-                          <p>Easy</p>
-                      </div>
-                      <div class="card-collection">
-                          <img class="icon" src="images/icons/heart.svg" alt="time">
-                          <p>Add to collection</p>
-                      </div>
-                  </div>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/spaghetti.webp" alt="spaghetti">
-              </div>
-              <h2>Italian spaghetti</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>1 h</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Medium</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/cheesecake.webp" alt="cheesecake">
-              </div>
-              <h2>Cheesecake</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>1 h</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Hard</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/tortilla.webp" alt="tortilla">
-              </div>
-              <h2>Tortilla wrap</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>45 min</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Medium</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/steak.webp" alt="steak">
-              </div>
-              <h2>Perfect steak</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>2 h</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Hard</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/brownies.webp" alt="brownies">
-              </div>
-              <h2>Brownies</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>50 min</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Medium</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="recipe-card">
-              <div class="img-wrapper">
-                  <img src="images/food-images/tomato-soup.webp" alt="tomato-soup">
-              </div>
-              <h2>Tomato soup</h2>
-              <div class="card-text-wrapper">
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/time.svg" alt="time">
-                      <p>55 min</p>
-                  </div>
-                  <div class="card-text">
-                      <img class="icon" src="images/icons/gauge.svg" alt="time">
-                      <p>Easy</p>
-                  </div>
-                  <div class="card-collection">
-                      <img class="icon" src="images/icons/heart.svg" alt="time">
-                      <p>Add to collection</p>
-                  </div>
-              </div>
-          </div>
-
-          
-          
-      </div>
-
-  </div>
-      </section>
     </main>
 
     <footer>
-      <div class="footer-mobile">
-        <div class="container-newsletter">
-          <h3>Newsletter sign up</h3>
-          <p>
-            Sign up for our weekly newsletter and be the first one who knows
-            about our prizes and latest trending recipes!
-          </p>
-          <div class="container-newsletter-signup">
-            <input type="text" placeholder="Your e-mail" />
-            <button class="button-primary" type="submit">Sign me up</button>
-          </div>
+        <div class="footer-mobile">
+            <div class="container-newsletter">
+                <h3>Newsletter sign up</h3>
+                <p>
+                    Sign up for our weekly newsletter and be the first one who knows
+                    about our prizes and latest trending recipes!
+                </p>
+                <div class="container-newsletter-signup">
+                    <input type="text" placeholder="Your e-mail" />
+                    <button class="button-primary" type="submit">Sign me up</button>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="footer-desktop">
-        <div class="grid-footer">
-          <div class="grid-1">
-            <ul>
-              <h3>Quick links</h3>
-              <li><a href="#">Breakfast recipes</a></li>
-              <li><a href="#">Dinner recipes</a></li>
-              <li><a href="#">Healthy recipes</a></li>
-              <li><a href="#">Quick and easy recipes</a></li>
-            </ul>
-          </div>
-          <div class="grid-2">
-            <ul>
-              <h3>Useful links</h3>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Contact us</a></li>
-            </ul>
-            <div class="some-icon-container">
-              <img class="icon" src="./images/ig-icon.svg" alt="" />
-              <img class="icon" src="./images/fb-icon.svg" alt="" />
+        <div class="footer-desktop">
+            <div class="grid-footer">
+                <div class="grid-1">
+                    <ul>
+                        <h3>Quick links</h3>
+                        <li><a href="#">Breakfast recipes</a></li>
+                        <li><a href="#">Dinner recipes</a></li>
+                        <li><a href="#">Healthy recipes</a></li>
+                        <li><a href="#">Quick and easy recipes</a></li>
+                    </ul>
+                </div>
+                <div class="grid-2">
+                    <ul>
+                        <h3>Useful links</h3>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    <div class="some-icon-container">
+                        <img class="icon" src="./images/icons/ig-icon.svg" alt="instagram" />
+                        <img class="icon" src="./images/icons/fb-icon.svg" alt="facebook" />
+                    </div>
+                </div>
+                <div class="grid-3 container-newsletter">
+                    <h3>Newsletter sign up</h3>
+                    <p>
+                        Sign up for our weekly newsletter and be the first one who knows
+                        about our prizes and latest trending recipes!
+                    </p>
+                    <div class="container-newsletter-signup">
+                        <input type="text" placeholder="Your e-mail" />
+                        <button class="button-primary" type="submit">Sign me up</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="grid-3 container-newsletter">
-            <h3>Newsletter sign up</h3>
-            <p>
-              Sign up for our weekly newsletter and be the first one who knows
-              about our prizes and latest trending recipes!
-            </p>
-            <div class="container-newsletter-signup">
-              <input type="text" placeholder="Your e-mail" />
-              <button class="button-primary" type="submit">Sign me up</button>
-            </div>
-          </div>
         </div>
-      </div>
     </footer>
-  </body>
+</body>
+
 </html>

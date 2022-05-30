@@ -54,13 +54,6 @@ footer {
       grid-template-areas: "grid-1 grid-2 grid-3";
 }
 
-@media only screen and (min-width: 1370px) {
-  .footer-desktop .grid-footer {
-    -ms-grid-columns: 1fr 0.7fr 0.7fr;
-        grid-template-columns: 1fr 0.7fr 0.7fr;
-  }
-}
-
 .footer-desktop [class*="grid"] ul li {
   padding: 0.2rem 0;
 }
@@ -97,6 +90,16 @@ footer {
 
 .footer-desktop a {
   color: #1C1C1C;
+}
+
+@media only screen and (min-width: 1032px) {
+  .footer-desktop {
+    padding: 3rem 3rem;
+  }
+  .footer-desktop .grid-footer {
+    -ms-grid-columns: 1fr 0.7fr 0.7fr;
+        grid-template-columns: 1fr 0.7fr 0.7fr;
+  }
 }
 
 .container-newsletter-signup {

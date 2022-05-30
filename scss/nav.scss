@@ -25,7 +25,7 @@
     }
 }
 
-nav a {
+nav ul a {
     font-family: $font-headers;
     text-transform: uppercase;
     display: block;
@@ -36,20 +36,20 @@ nav a {
 }
 
 @media only screen and (min-width: map-get($breakPoints, md)) {
-    nav a {
+    nav ul a {
         padding: $spacing-sm 0;
         font-size: 1.3rem;
     }
 }
 
 @media only screen and (min-width: map-get($breakPoints, lg)) {
-    nav a {
+    nav ul a {
         font-size: 1.2rem;
     }
 }
 
 @media only screen and (min-width: map-get($breakPoints, xl)) {
-    nav a {
+    nav ul a {
         font-size: 1.5rem;
     }
 }
@@ -65,9 +65,13 @@ nav a {
     position: relative;
     gap: $spacing-md;
 
-    .logo {
-        height: 80%;
+    .container-logo {
+        height: 100%;
         z-index: 2;
+    }
+
+    .logo {
+        height: 100%;
     }
 
     .search-icon {
@@ -197,6 +201,10 @@ nav a {
         height: 80px;
         align-items: center;
         position: relative;
+
+        .container-logo {
+            height: 100%;
+        }
 
         .logo {
             height: 100%;
